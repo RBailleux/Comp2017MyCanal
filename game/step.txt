@@ -1,0 +1,27 @@
+step 0 : 
+	Nom du générateur
+	Baseline
+	Call to action : appel en ajax de la step 1
+		-> ?step=1
+
+step 1 :
+	Choisir le genre
+	Au choix du genre : appel en ajax de la step 2, passer le genre en paramètre d'url
+		-> ?step=2&genre=xxx
+
+step 2 :
+	Choisir le nom du programme
+	Au clic sur la validation :  appel en ajax de la step 3, passer genre et nom en paramètre d'url
+		-> ?step=3&genre=xxx&nom=xxx
+		
+step 3 :
+	3 mots à choisir, correspondant au thème pour le fond, le genre, le perso.
+	3 cartes retournées : au clic sur une carte, afficher un mot correspondant à une description aléatoire
+	Au clic sur validation : appel en ajax de la step 4, passer le genre, le nom, les 3 mots en array, et l'id de description
+		-> ?step=4&genre=xxx&nom=xxx&keywords=aaa,bbb,ccc&desc=id
+step 4 :
+	Afficher le poster de l'utilisateur
+	Call to action de partage
+	Envoyer par mail
+	Phrase du mois gratuit
+	Afficher des contenus originaux Canal+
