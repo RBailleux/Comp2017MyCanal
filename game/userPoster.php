@@ -42,6 +42,12 @@ function step0(){
 
 }
 function step1(){
+?>
+	<div class="loader-spinner">
+		<div class="cube1"></div>
+		<div class="cube2"></div>
+	</div>
+<?php 
 	$arrayCategories= ['Film','Série','Documentaire'];
 	foreach ($arrayCategories as $category) {
 	?>
@@ -51,6 +57,10 @@ function step1(){
 }
 function step2(){
 ?>
+	<div class="loader-spinner">
+		<div class="cube1"></div>
+		<div class="cube2"></div>
+	</div>
 	<div class="form-group">
 		<input class="stepName" type="text" name="name" class="form-control" required>
 		<button class="btn btn-primary nextStep" data-step="3">Commencer</button>
@@ -72,14 +82,13 @@ function stepError(){
 jQuery(document).ready(function(){
 	jQuery('button.nextStep').click(function(event){
 		event.preventDefault();
-		jQuery('#customPoster').addClass('loading');
 		var step = jQuery(this).attr('data-step');
 		setCookie('step', step, 30);
-		
+		jQuery('.loader-spinner').show();
 		switch(step){
 			case '1':
 				jQuery('#customPoster').load('./game/userPoster.php?step='+step, function() {
-					jQuery('#customPoster').removeClass('loading');
+					jQuery('.loader-spinner').hide();
 					jQuery('button.nextStep').click(function(){
 						category = jQuery(this).attr('data-category');
 						setCookie('category', category, 30);
@@ -88,7 +97,7 @@ jQuery(document).ready(function(){
 				break;
 			case '2':
 				jQuery('#customPoster').load('./game/userPoster.php?step='+step, function(){
-					jQuery('#customPoster').removeClass('loading');
+					jQuery('.loader-spinner').hide();
 					jQuery('button.nextStep').click(function(){
 						name = jQuery('#customPoster .stepName').val();
 						setCookie('name', name, 30);
@@ -96,6 +105,13 @@ jQuery(document).ready(function(){
 				});
 				break;
 			case '3':
+				jQuery('#customPoster').load('./game/userPoster.php?step='+step, function(){
+					jQuery('.loader-spinner').hide();
+					jQuery('button.nextStep').click(function(){
+						name = jQuery('#customPoster .stepName').val();
+						setCookie('name', name, 30);
+					});
+				});
 				break;
 			case '4':
 				break;
