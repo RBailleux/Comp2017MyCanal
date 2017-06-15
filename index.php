@@ -8,7 +8,13 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
-		<div id="programs" class="container container-fill"></div>
+		<div id="programs" class="container container-fill">
+			<div class="row">
+				<div class="col-xs-12">
+					<img src="assets/img/myCanal.png" alt="MyCanal">
+				</div>
+			</div>
+		</div>
 		<div id="exlu" class="container"></div>
 		<div id="functionalities" class="container container-fill"></div>
 		<div id="customPoster" class="container container-fill"></div>

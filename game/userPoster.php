@@ -1,8 +1,9 @@
 <?php
-// 	header ("Content-type: image/png");
-// 	require_once 'generatePoster.php';
-// 	$poster = new generatePoster('film', 'soleil.jpg', 'drama', 'Le soleil ça brule', 'ffffff', 'Barbecue party');
-// 	imagepng($poster->getImage(), 'test.png');
+	header ("Content-type: image/png");
+	require_once 'generatePoster.php';
+	$poster = new generatePoster('film', 'soleil.jpg', 'drama', 'Le soleil ça brule', 'ffffff', 'Barbecue party');
+	imagepng($poster->getImage());
+	die();
 main();
 function main(){
 	if(!isset($_GET['step'])){
