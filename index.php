@@ -119,7 +119,10 @@
 			<div class="container container-fill">
 				<div class="row">
 					<div class="col-xs-12">
-						<h1 class="uppercase space-top">Découvrez nos fonctionnalités</h1>
+						<h1 class="uppercase center space-top">Découvrez nos fonctionnalités</h1>
+					</div>
+					<div class="col-xs-12 center onBottom">
+						<button class="btn btn-primary btn-big">Je découvre les fonctionnalités</button>
 					</div>
 				</div>
 			</div>
