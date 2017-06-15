@@ -1,9 +1,140 @@
-html,body {
-/* 	height:100%; */
+@font-face {
+    font-family: CanalBoldRomain;
+    src: url("../fonts/CanalBoldRomain.otf") format("opentype");
 }
+
+html,body {
+	height:100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/** BOOTSTRAP OVER **/
+.btn-primary{
+	background-color:#00bdff;
+	border-color:#00bdff;
+	font-size:20px;
+}
+h1{
+	color:#ffffff;
+	font-size:40px;
+	font-family:"CanalBoldRomain", sans-serif;
+	font-weight:bold;
+}
+.btn-big{
+	padding:12px 25px;
+}
+/**********/
+/** MAIN **/
+/**********/
+
+.background-overlay{
+	left:0;
+	position:absolute;
+	display:block;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.3);
+}
+.text{
+	color:white;
+	font-size:2em;
+}
+.uppercase{
+	text-transform:uppercase;
+}
+.asterisk{
+	font-size:1em;
+}
+.space-top{
+	margin-top:30px;
+}
+.space-bottom{
+	margin-bottom:30px;
+}
+.center{
+	text-align:center;
+}
+.black{
+	color:#000;
+}
+
+/*PROGRAMS*/
 .container-fill{
 	min-height: 100%;
     height: 100%;
+}
+#logoMyCanal{
+	text-align:center;
+}
+.nav-top{
+	top:5%;
+	position:relative;
+}
+.signin-container{
+	position:absolute;
+	top:0;
+	right:0;
+}
+#programs{
+	width:100%;
+	height: 100%;
+	background-image:url(../img/bg1.png);
+	background-size:cover;
+}
+.programs-desc{
+	position:absolute;
+	bottom:5em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*EXCLU*/
+#exclu{
+	position:relative;
+}
+#exclu-slider-container{
+	position:absolute;
+	width:100%;	
+}
+.slider-title{
+	font-weight:600;
+	font-size:1.5em;
+	display:block;
+}
+.slick-arrow {
+    background-color: rgba(255,255,255,0.6);
+    z-index:1;
+    width:85px;
+    height:100px;
+    top:38%
+}
+.slick-prev{
+	left:0;
+}
+.slick-next{
+	right:0;
+}
+.slick-prev:before{
+    content: "<";
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 70px;
+    opacity: 1;
+}
+.slick-next:before{
+    content: ">";
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    font-size: 70px;
+    opacity: 1;
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus{
+	background-color: rgba(255,255,255,0.6);
+}
+.slick-slide img, .slick-slide .slider-text{
+	margin:0 auto;
+	width:325px;
+	height:auto;
+	text-align:left;
 }
 
 /* BEGIN LOADER */
