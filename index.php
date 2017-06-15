@@ -140,7 +140,43 @@
 				</div>
 			</div>
 		</div>
-		<div id="prices" class="container container-fill"></div>
+		<div id="prices" class="container container-fill">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1 class="uppercase black center">Choisissez l'offre qui vous convient</h1>
+				</div>
+				<div class="col-xs-12">
+					<p class="center subtitle">
+						Choisissez une offre MyCanal et profitez d’un mois gratuit* sans engagement
+					</p>
+				</div>
+			</div>
+			<div class="row space-top">
+				<div class="col-md-4 col-xs-12">
+					<div class="pricing-container">
+						<div class="pricing-title center">
+							<h2 class="uppercase bold">Essentiel</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="pricing-container">
+						<div class="pricing-title center">
+							<h2 class="uppercase bold">Essentiel</h2>
+							<p class="uppercase">Les chaines ciné série</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="pricing-container">
+						<div class="pricing-title center">
+							<h2 class="uppercase bold">Essentiel</h2>
+							<p class="uppercase">Les chaines sport</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- SCRIPTS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     	<script src="assets/js/bootstrap.min.js"></script>
