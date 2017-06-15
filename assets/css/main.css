@@ -149,6 +149,14 @@ h1{
 	background-size:cover;
 }
 
+/*customPoster*/
+#customPoster{
+	width:100%;
+	height: 100%;
+	background-image:url(../img/bg2.png);
+	background-size:cover;
+}
+
 /* BEGIN LOADER */
 .loader-spinner {
   margin: 100px auto;

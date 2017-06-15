@@ -127,7 +127,19 @@
 				</div>
 			</div>
 		</div>
-<!-- 		<div id="customPoster" class="container container-fill"></div> -->
+		<div id="customPoster">
+			<span class="background-overlay"></span>
+			<div class="container container-fill">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1 class="uppercase center space-top">Générateur original de contenus originaux</h1>
+					</div>
+					<div class="col-xs-12 center onBottom">
+						<button class="btn btn-primary btn-big">Je profite d'un mois gratuit*</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div id="prices" class="container container-fill"></div>
 		<!-- SCRIPTS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

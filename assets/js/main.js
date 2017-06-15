@@ -31,7 +31,7 @@ jQuery(document).ready(function(){
 		  ]
 		});
 	//Game
-	jQuery('#customPoster').load('./game/userPoster.php');
+	//jQuery('#customPoster').load('./game/userPoster.php');
 });
 
 
