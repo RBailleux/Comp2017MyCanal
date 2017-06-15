@@ -155,7 +155,7 @@
 				<div class="col-md-4 col-xs-12">
 					<div class="pricing-container">
 						<div class="pricing-title center">
-							<h2 class="uppercase bold">Essentiel</h2>
+							<h2 class="uppercase bold no-subtitle">Essentiel</h2>
 						</div>
 					</div>
 				</div>

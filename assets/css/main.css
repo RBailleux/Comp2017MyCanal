@@ -176,6 +176,9 @@ h1{
 	box-shadow: 0px 0px 20px 1px #656565;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=20);
 }
+.no-subtitle{
+    line-height: 50px;
+}
 
 /* BEGIN LOADER */
 .loader-spinner {
