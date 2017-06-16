@@ -293,7 +293,7 @@
 				</div>
 			</div>
 			<div class="row space-top">
-				<div class="col-md-3 col-sm-12">
+				<div class="col-md-3 col-sm-12 footer-col">
 					<p class="white bold">
 						Vous êtes abonné ?
 					</p>
@@ -301,7 +301,7 @@
 						Tous les programmes de votre abonnement sont sur myCanal sur PC/Mac, smartphones et tablettes
 					</p>
 				</div>
-				<div class="col-md-3 col-sm-12">
+				<div class="col-md-3 col-sm-12 footer-col">
 					<p>
 						<a class="white" href="#">Cookies</a>
 					</p>
@@ -309,7 +309,7 @@
 						<a class="white" href="#">CGU</a>
 					</p>
 				</div>
-				<div class="col-md-3 col-sm-12">
+				<div class="col-md-3 col-sm-12 footer-col">
 					<p>
 						<a class="white" href="#">Mentions légales</a>
 					</p>
@@ -317,7 +317,7 @@
 						<a class="white" href="#">Modalités de l'offre*</a>
 					</p>
 				</div>
-				<div class="col-md-3 col-sm-12">
+				<div class="col-md-3 col-sm-12 footer-col">
 					<p class="white">
 						Restez connectés
 					</p>

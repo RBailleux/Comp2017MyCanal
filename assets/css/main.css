@@ -435,4 +435,14 @@ ul.social-network li {
 	.resp-full{
 		width:100%;
 	}
+	.pricing-main-container{
+		padding-top:25px;
+		padding-bottom:25px;
+	}
+	.pricing-desc p{
+		padding:25px;
+	}
+	.footer-col:not(first){
+		padding-top:15px;
+	}
 }
