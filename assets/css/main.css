@@ -445,4 +445,13 @@ ul.social-network li {
 	.footer-col:not(first){
 		padding-top:15px;
 	}
+	#customPoster{
+		background:none;
+	}
+	#customPoster h1{
+		color:black
+	}
+	#customPoster .background-overlay{
+		display:none;
+	}
 }
