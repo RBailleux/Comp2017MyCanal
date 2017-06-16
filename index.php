@@ -132,6 +132,11 @@
 					</div>
 				</div>
 			</div>
+			<div class="container">
+				<video width="100%" height="auto" autoplay="autoplay">
+					<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+				</video>
+			</div>
 			<div class="container centerOnBottom">
 				<div class="row">
 					<div class="col-sm-12 center">
