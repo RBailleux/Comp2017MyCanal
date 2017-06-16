@@ -1,39 +1,54 @@
 jQuery(document).ready(function(){
 	//Slider
 	$('#exclu-slider').slick({
-		  dots: false,
-		  speed: 300,
-		  slidesToShow: 3,
-		  slidesToScroll: 3,
-		  centerMode: true,
-		  responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3
-		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		  ]
-		});
+	  dots: false,
+	  speed: 300,
+	  slidesToShow: 3,
+	  slidesToScroll: 3,
+	  centerMode: true,
+	  responsive: [
+	    {
+	      breakpoint: 1024,
+	      settings: {
+	        slidesToShow: 3,
+	        slidesToScroll: 3
+	      }
+	    },
+	    {
+	      breakpoint: 600,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 2
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1
+	      }
+	    }
+	  ]
+	});
+	//PRICING
+	jQuery('.pricing-container').click(function(){
+		pricingShadow(this);
+	});
+	jQuery('.pricing-container').hover(function(){
+		pricingShadow(this);
+	});
+	jQuery('.pricing-container').focus(function(){
+		pricingShadow(this);
+	});
 	//Game
 	//jQuery('#customPoster').load('./game/userPoster.php');
 });
-
+function pricingShadow(element){
+	jQuery('.pricing-container').each(function(){
+		jQuery(this).removeClass('active');
+	})
+	jQuery(element).addClass('active');
+}
 
 function setCookie(cname,cvalue,exdays) {
     var d = new Date();

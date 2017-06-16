@@ -153,7 +153,7 @@
 			</div>
 			<div class="row space-top pricing-section">
 				<div class="col-md-4 col-xs-12 pricing-main-container">
-					<div class="pricing-container">
+					<div class="pricing-container active">
 						<div class="pricing-title center">
 							<h2 class="uppercase bold no-subtitle">Essentiel</h2>
 						</div>
@@ -256,6 +256,9 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="col-xs-12 center onBottom">
+				<button class="btn btn-primary btn-big">Je profite d'un mois gratuit*</button>
 			</div>
 		</div>
 		<!-- SCRIPTS -->
