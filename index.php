@@ -147,31 +147,112 @@
 				</div>
 				<div class="col-xs-12">
 					<p class="center subtitle">
-						Choisissez une offre MyCanal et profitez d’un mois gratuit* sans engagement
+						Choisissez une offre MyCanal et profitez d’<a href="#">un mois gratuit*</a> sans engagement
 					</p>
 				</div>
 			</div>
-			<div class="row space-top">
-				<div class="col-md-4 col-xs-12">
+			<div class="row space-top pricing-section">
+				<div class="col-md-4 col-xs-12 pricing-main-container">
 					<div class="pricing-container">
 						<div class="pricing-title center">
 							<h2 class="uppercase bold no-subtitle">Essentiel</h2>
 						</div>
+						<div class="pricing-amount-main-container">
+							<div class="pricing-amount-container">
+								<div class="pricing-amount-up row">
+									<div class="col-xs-6 bold price-left">
+										19
+									</div>
+									<div class="col-xs-6 price-right">
+										<div class="bold">
+											€99
+										</div>
+										<div class="subscription">
+											/Mois*
+										</div>
+									</div>
+								</div>
+								<div class="pricing-amount-down row">
+									pendant 2 ans
+								</div>
+							</div>
+						</div>
+						<div class="pricing-desc space-top row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<p>
+									Les grands événements sport, cinéma, série avec la chaîne CANAL +
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-xs-12 pricing-main-container">
 					<div class="pricing-container">
 						<div class="pricing-title center">
 							<h2 class="uppercase bold">Essentiel</h2>
 							<p class="uppercase">Les chaines ciné série</p>
 						</div>
+						<div class="pricing-amount-main-container">
+							<div class="pricing-amount-container">
+								<div class="pricing-amount-up row">
+									<div class="col-xs-6 bold price-left">
+										39
+									</div>
+									<div class="col-xs-6 price-right">
+										<div class="bold">
+											€99
+										</div>
+										<div class="subscription">
+											/Mois*
+										</div>
+									</div>
+								</div>
+								<div class="pricing-amount-down row">
+									pendant 2 ans
+								</div>
+							</div>
+						</div>
+						<div class="pricing-desc space-top row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<p>
+									La seule offre qui réunit les grandes chaînes de cinéma et séries
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-xs-12 pricing-main-container">
 					<div class="pricing-container">
 						<div class="pricing-title center">
 							<h2 class="uppercase bold">Essentiel</h2>
 							<p class="uppercase">Les chaines sport</p>
+						</div>
+						<div class="pricing-amount-main-container">
+							<div class="pricing-amount-container">
+								<div class="pricing-amount-up row">
+									<div class="col-xs-6 bold price-left">
+										49
+									</div>
+									<div class="col-xs-6 price-right">
+										<div class="bold">
+											€99
+										</div>
+										<div class="subscription">
+											/Mois*
+										</div>
+									</div>
+								</div>
+								<div class="pricing-amount-down row">
+									pendant 2 ans
+								</div>
+							</div>
+						</div>
+						<div class="pricing-desc space-top row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<p>
+									La seule offre qui réunit les plus grandes chaînes de sport
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -2,6 +2,10 @@
     font-family: CanalBoldRomain;
     src: url("../fonts/CanalBoldRomain.otf") format("opentype");
 }
+@font-face {
+    font-family: CanalLightRomain;
+    src: url("../fonts/CanalLightRomain.otf") format("opentype");
+}
 
 html,body {
 	height:100%;
@@ -22,6 +26,9 @@ h1{
 }
 .btn-big{
 	padding:12px 25px;
+}
+a{
+	color:#00bdff;
 }
 /**********/
 /** MAIN **/
@@ -164,10 +171,20 @@ h1{
 }
 
 /*PRICING*/
+.pricing-section{
+	display:flex;
+}
+.pricing-main-container{
+	flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
 .pricing-container{
+	height:100%;
 	box-shadow:none;
 	-webkit-transition: box-shadow 0.3s; /* Safari */
     transition: box-shadow 0.3s;
+    border: 1px solid #00BDFF;
 }
 .pricing-container:hover{
 	-moz-box-shadow: 0px 0px 20px 1px #656565;
@@ -176,8 +193,43 @@ h1{
 	box-shadow: 0px 0px 20px 1px #656565;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=20);
 }
+.pricing-container .pricing-title{
+	min-height:65px;
+}
+.pricing-container .pricing-title h2{
+	font-family:"CanalBoldRomain", sans-serif;
+}
 .no-subtitle{
     line-height: 50px;
+}
+.pricing-amount-container{
+	width: 50%;
+    margin: 0 auto;
+    color: #00BDFF;
+}
+.pricing-amount-up{
+	font-family:"CanalBoldRomain", sans-serif;
+	text-transform:uppercase;
+}
+.pricing-amount-down{
+	text-align: center;
+	font-size: 1.2em;
+}
+.price-left{
+	padding-right:0;
+    text-align: right;
+    font-size: 4em;
+    line-height: 1em;
+}
+.price-right{
+	padding-left:0;
+	font-size:1.4em;	
+}
+.subscription{
+	font-family:"CanalLightRomain", sans-serif;
+}
+.pricing-desc{
+	font-size: 1.3em;
 }
 
 /* BEGIN LOADER */
