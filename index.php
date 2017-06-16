@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!-- FONTS -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
 		<link href="assets/fonts/CanalBoldRomain" rel="stylesheet">
 	</head>
 	<body>
@@ -140,6 +141,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- PRICES -->
 		<div id="prices" class="container container-fill">
 			<div class="row">
 				<div class="col-xs-12">
@@ -261,6 +263,65 @@
 				<button class="btn btn-primary btn-big">Je profite d'un mois gratuit*</button>
 			</div>
 		</div>
+		<!-- /PRICES -->
+		<!-- COPYRIGHT -->
+		<div id="copyrights" class="space-bottom">
+			<p>
+				Copyright : Babysitting © 2015 Axel Films / Madame Films / M6 Films / Cinéfrance 1888 / Aladin © 2015 74 FILMS - PATHE PRODUCTION - M6 FILMS - ARTEMIS PRODUCTION / Gomorra Antonello & Montesi/Sky Italia/Beta Film / Luther © BBC 2015 / Braquo CANAL+ / Hunger Games TM & Â© 2015 Lions Gate Entertainment Inc. All Rights Reserved. / Au Cœur de l'océan © 2015 Warner Bros. Entertainment Inc.
+			</p>
+		</div>
+		<footer>
+			<div class="row">
+				<div class="col-xs-12">
+					<img src="assets/img/logo-inline.png" alt="MyCanal">
+				</div>
+			</div>
+			<div class="row space-top">
+				<div class="col-md-3 col-xs-12">
+					<p class="white bold">
+						Vous êtes abonné ?
+					</p>
+					<p class="grey">
+						Tous les programmes de votre abonnement sont sur myCanal sur PC/Mac, smartphones et tablettes
+					</p>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<p>
+						<a class="white" href="#">Cookies</a>
+					</p>
+					<p>
+						<a class="white" href="#">CGU</a>
+					</p>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<p>
+						<a class="white" href="#">Mentions légales</a>
+					</p>
+					<p>
+						<a class="white" href="#">Modalités de l'offre*</a>
+					</p>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<p class="white">
+						Restez connectés
+					</p>
+					<ul class="social-network social-circle">
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="socicon socicon-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="socicon socicon-twitter"></i></a></li>
+                        <li><a href="#" class="icoDailymotion" title="Dailymotion"><i class="socicon socicon-dailymotion"></i></a></li>
+                        <li><a href="#" class="icoYoutube" title="YouTube"><i class="socicon socicon-youtube"></i></a></li>
+                    </ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="pull-right white">
+						© CANAL+ <?php echo date("Y"); ?>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<!-- /COPYRIGHT -->
 		<!-- SCRIPTS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     	<script src="assets/js/bootstrap.min.js"></script>
