@@ -125,7 +125,7 @@
 		</div>
 		<div id="functionalities">
 			<span class="background-overlay"></span>
-			<div class="container container-fill">
+			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
 						<h1 class="uppercase center space-top no-padding">Découvrez nos fonctionnalités</h1>
@@ -134,12 +134,12 @@
 			</div>
 			<div class="container">
 				<video width="100%" height="auto" autoplay="autoplay">
-					<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+					<source src="assets/img/Boucle-test_1.mp4" type="video/mp4" />
 				</video>
 			</div>
-			<div class="container centerOnBottom">
+			<div class="container">
 				<div class="row">
-					<div class="col-sm-12 center">
+					<div class="col-sm-12 center space-top space-bottom">
 						<button class="btn btn-primary btn-big">Je découvre les fonctionnalités</button>
 					</div>
 				</div>
