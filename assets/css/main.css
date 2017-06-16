@@ -29,6 +29,12 @@ h1{
 }
 a{
 	color:#00bdff;
+	-webkit-transition: color 0.3s; /* Safari */
+    transition: color 0.3s;
+}
+.btn-primary{
+	-webkit-transition: background-color 0.3s, border-color 0.3s; /* Safari */
+    transition: background-color 0.3s, border-color 0.3s;
 }
 a:hover{
 	text-decoration:none;
