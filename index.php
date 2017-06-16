@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" /> 
 		<title>MyCanal</title>
 		<!-- CSS -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -18,15 +19,17 @@
 			<span class="background-overlay"></span>
 			<div class="container container-fill">
 				<div class="row nav-top">
-					<div id="logoMyCanal" class="col-xs-12">
+					<div id="logoMyCanal" class="col-sm-12">
 						<img src="assets/img/logo.png" alt="MyCanal">
 					</div>
 					<div class="signin-container">
 						<button class="btn btn-primary">Je m'identifie</button>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-7 col-xs-12 programs-desc">
+			</div>
+			<div class="container programs-desc">
+				<div class="row space-top">
+					<div class="col-md-7 col-sm-12">
 						<h1 class="uppercase">Tous vos programmes partout, tout le temps</h1>
 						<p class="text uppercase space-top">
 							Profitez d'un mois d'essai gratuit* <br>dès maintenant, sans engagement
@@ -34,15 +37,20 @@
 						<p class="text asterisk">
 							*Offre valable jusqu'au 30/06/17
 						</p>
-						<button class="btn btn-primary btn-big space-top">Je profite de l'offre</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-7 col-sm-12 space-bottom">
+						<button class="btn btn-primary btn-big space-top resp-full">Je profite de l'offre</button>
+						<button class="btn btn-primary btn-big resp-btn resp-full space-top">Je m'identifie</button>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="exclu">
-			<div class="container">
+			<div class="container container-fill">
 				<div class="row">
-					<div class="col-xs-12 center">
+					<div class="col-sm-12 center no-padding">
 						<h1 class="uppercase black space-top space-bottom">Profitez des exclusivités MyCanal</h1>
 					</div>
 				</div>
@@ -109,7 +117,7 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 center">
+					<div class="col-sm-12 center">
 						<button class="btn btn-primary btn-big space-top space-bottom">Je découvre les programmes</button>
 					</div>
 				</div>
@@ -119,10 +127,14 @@
 			<span class="background-overlay"></span>
 			<div class="container container-fill">
 				<div class="row">
-					<div class="col-xs-12">
-						<h1 class="uppercase center space-top">Découvrez nos fonctionnalités</h1>
+					<div class="col-sm-12">
+						<h1 class="uppercase center space-top no-padding">Découvrez nos fonctionnalités</h1>
 					</div>
-					<div class="col-xs-12 center onBottom">
+				</div>
+			</div>
+			<div class="container centerOnBottom">
+				<div class="row">
+					<div class="col-sm-12 center">
 						<button class="btn btn-primary btn-big">Je découvre les fonctionnalités</button>
 					</div>
 				</div>
@@ -132,29 +144,33 @@
 			<span class="background-overlay"></span>
 			<div class="container container-fill">
 				<div class="row">
-					<div class="col-xs-12">
-						<h1 class="uppercase center space-top">Générateur original de contenus originaux</h1>
+					<div class="col-sm-12">
+						<h1 class="uppercase center space-top no-padding">Générateur original de contenus originaux</h1>
 					</div>
-					<div class="col-xs-12 center onBottom">
+				</div>
+			</div>
+			<div class="container centerOnBottom">
+				<div class="row">
+					<div class="col-sm-12 center">
 						<button class="btn btn-primary btn-big">Je profite d'un mois gratuit*</button>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- PRICES -->
-		<div id="prices" class="container container-fill">
-			<div class="row">
-				<div class="col-xs-12">
-					<h1 class="uppercase black center">Choisissez l'offre qui vous convient</h1>
+		<div id="prices" class="container">
+			<div class="row space-top">
+				<div class="col-sm-12">
+					<h1 class="uppercase black center no-padding">Choisissez l'offre qui vous convient</h1>
 				</div>
-				<div class="col-xs-12">
+				<div class="col-sm-12">
 					<p class="center subtitle">
 						Choisissez une offre MyCanal et profitez d’<a href="#">un mois gratuit*</a> sans engagement
 					</p>
 				</div>
 			</div>
-			<div class="row space-top pricing-section">
-				<div class="col-md-4 col-xs-12 pricing-main-container">
+			<div class="row space-top space-bottom pricing-section">
+				<div class="col-md-4 col-sm-12 pricing-main-container">
 					<div class="pricing-container active">
 						<div class="pricing-title center">
 							<h2 class="uppercase bold no-subtitle">Essentiel</h2>
@@ -162,10 +178,10 @@
 						<div class="pricing-amount-main-container">
 							<div class="pricing-amount-container">
 								<div class="pricing-amount-up row">
-									<div class="col-xs-6 bold price-left">
+									<div class="col-sm-6 col-xs-6 bold price-left">
 										19
 									</div>
-									<div class="col-xs-6 price-right">
+									<div class="col-sm-6 col-xs-6 price-right">
 										<div class="bold">
 											€99
 										</div>
@@ -179,8 +195,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="pricing-desc space-top row">
-							<div class="col-xs-10 col-xs-offset-1">
+						<div class="pricing-desc space-bottom space-top row">
+							<div class="col-sm-10 col-sm-offset-1">
 								<p>
 									Les grands événements sport, cinéma, série avec la chaîne CANAL +
 								</p>
@@ -188,7 +204,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12 pricing-main-container">
+				<div class="col-md-4 col-sm-12 pricing-main-container">
 					<div class="pricing-container">
 						<div class="pricing-title center">
 							<h2 class="uppercase bold">Essentiel</h2>
@@ -197,10 +213,10 @@
 						<div class="pricing-amount-main-container">
 							<div class="pricing-amount-container">
 								<div class="pricing-amount-up row">
-									<div class="col-xs-6 bold price-left">
+									<div class="col-sm-6 col-xs-6 bold price-left">
 										39
 									</div>
-									<div class="col-xs-6 price-right">
+									<div class="col-sm-6 col-xs-6 price-right">
 										<div class="bold">
 											€99
 										</div>
@@ -214,8 +230,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="pricing-desc space-top row">
-							<div class="col-xs-10 col-xs-offset-1">
+						<div class="pricing-desc space-bottom space-top row">
+							<div class="col-sm-10 col-sm-offset-1">
 								<p>
 									La seule offre qui réunit les grandes chaînes de cinéma et séries
 								</p>
@@ -223,7 +239,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12 pricing-main-container">
+				<div class="col-md-4 col-sm-12 pricing-main-container">
 					<div class="pricing-container">
 						<div class="pricing-title center">
 							<h2 class="uppercase bold">Essentiel</h2>
@@ -232,10 +248,10 @@
 						<div class="pricing-amount-main-container">
 							<div class="pricing-amount-container">
 								<div class="pricing-amount-up row">
-									<div class="col-xs-6 bold price-left">
+									<div class="col-sm-6 col-xs-6 bold price-left">
 										49
 									</div>
-									<div class="col-xs-6 price-right">
+									<div class="col-sm-6 col-xs-6 price-right">
 										<div class="bold">
 											€99
 										</div>
@@ -249,8 +265,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="pricing-desc space-top row">
-							<div class="col-xs-10 col-xs-offset-1">
+						<div class="pricing-desc space-bottom space-top row">
+							<div class="col-sm-10 col-sm-offset-1">
 								<p>
 									La seule offre qui réunit les plus grandes chaînes de sport
 								</p>
@@ -259,7 +275,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 center onBottom">
+			<div class="col-sm-12 center space-top space-bottom">
 				<button class="btn btn-primary btn-big">Je profite d'un mois gratuit*</button>
 			</div>
 		</div>
@@ -272,12 +288,12 @@
 		</div>
 		<footer>
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-sm-12">
 					<img src="assets/img/logo-inline.png" alt="MyCanal">
 				</div>
 			</div>
 			<div class="row space-top">
-				<div class="col-md-3 col-xs-12">
+				<div class="col-md-3 col-sm-12">
 					<p class="white bold">
 						Vous êtes abonné ?
 					</p>
@@ -285,7 +301,7 @@
 						Tous les programmes de votre abonnement sont sur myCanal sur PC/Mac, smartphones et tablettes
 					</p>
 				</div>
-				<div class="col-md-3 col-xs-12">
+				<div class="col-md-3 col-sm-12">
 					<p>
 						<a class="white" href="#">Cookies</a>
 					</p>
@@ -293,7 +309,7 @@
 						<a class="white" href="#">CGU</a>
 					</p>
 				</div>
-				<div class="col-md-3 col-xs-12">
+				<div class="col-md-3 col-sm-12">
 					<p>
 						<a class="white" href="#">Mentions légales</a>
 					</p>
@@ -301,7 +317,7 @@
 						<a class="white" href="#">Modalités de l'offre*</a>
 					</p>
 				</div>
-				<div class="col-md-3 col-xs-12">
+				<div class="col-md-3 col-sm-12">
 					<p class="white">
 						Restez connectés
 					</p>
@@ -314,8 +330,8 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-12">
-					<p class="pull-right white">
+				<div class="col-sm-12">
+					<p class="white pull-right">
 						© CANAL+ <?php echo date("Y"); ?>
 					</p>
 				</div>

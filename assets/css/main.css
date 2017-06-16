@@ -20,7 +20,7 @@ html,body {
 }
 h1{
 	color:#ffffff;
-	font-size:40px;
+	font-size:3em;
 	font-family:"CanalBoldRomain", sans-serif;
 	font-weight:bold;
 }
@@ -90,16 +90,27 @@ a:hover{
 	position:absolute;
 	bottom:30px;
 }
+.centerOnBottom{
+	position:absolute;
+	bottom:30px;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
 .subtitle{
 	font-size: 1.5em;
 }
-
+.no-padding{
+	padding-left:0;
+	padding-right:0;
+}
 /*PROGRAMS*/
 #logoMyCanal{
 	text-align:center;
 }
 .nav-top{
-	top:5%;
+	margin-top:20px;
 	position:relative;
 }
 .signin-container{
@@ -108,17 +119,24 @@ a:hover{
 	right:0;
 }
 #programs{
+	position:relative;
 	width:100%;
-	height: 100%;
+	min-height: 100%;
 	background-image:url(../img/bg1.png);
 	background-size:cover;
 }
 .programs-desc{
 	position:absolute;
-	bottom:5em;
+	bottom:30px;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
 	font-family: 'Open Sans', sans-serif;
 }
-
+.resp-btn{
+	display:none;
+}
 /*EXCLU*/
 #exclu{
 	position:relative;
@@ -171,16 +189,18 @@ a:hover{
 
 /*FUNCTIONNALITIES*/
 #functionalities{
+	position:relative;
 	width:100%;
-	height: 100%;
+	min-height: 100%;
 	background-image:url(../img/bg2.png);
 	background-size:cover;
 }
 
 /*CUSTOMPOSTER*/
 #customPoster{
+	position:relative;
 	width:100%;
-	height: 100%;
+	min-height: 100%;
 	background-image:url(../img/bg2.png);
 	background-size:cover;
 }
@@ -394,7 +414,25 @@ ul.social-network li {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+	.programs-desc{
+		position:initial;
+	}
+	.programs-desc, .nav-top{
+		position:initial;
+	}
 	.pricing-section{
 		display:block;
+	}
+	h1{
+		font-size:2em;
+	}
+	.signin-container{
+		display:none;
+	}
+	.resp-btn{
+		display:inline-block;
+	}
+	.resp-full{
+		width:100%;
 	}
 }
