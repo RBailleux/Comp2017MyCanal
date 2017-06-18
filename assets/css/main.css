@@ -190,8 +190,25 @@ a:hover{
 /*FUNCTIONNALITIES*/
 #functionalities{
 	position:relative;
-	background-image:url(../img/bg2.png);
-	background-size:cover;
+}
+#functionalities .video-background{
+	position:relative;
+	width:100%;
+	height:auto;
+	z-index:0;
+}
+#functionalities .funct-title{
+	position:absolute;
+	z-index:1;
+	top:0;
+	width:100%;	
+}
+
+#functionalities .funct-button{
+	position:absolute;
+	z-index:1;
+	bottom:0;
+	width:100%;	
 }
 
 /*CUSTOMPOSTER*/

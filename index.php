@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" /> 
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /> 
 		<title>MyCanal</title>
 		<!-- CSS -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -12,7 +12,6 @@
 		<!-- FONTS -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
-		<link href="assets/fonts/CanalBoldRomain" rel="stylesheet">
 	</head>
 	<body>
 		<div id="programs">
@@ -124,20 +123,17 @@
 			</div>
 		</div>
 		<div id="functionalities">
-			<span class="background-overlay"></span>
-			<div class="container">
+			<video class="video-background" autoplay="autoplay" loop>
+				<source src="assets/img/Boucle-test_1.mp4" type="video/mp4" />
+			</video>
+			<div class="container funct-title">
 				<div class="row">
 					<div class="col-sm-12">
 						<h1 class="uppercase center space-top no-padding">Découvrez nos fonctionnalités</h1>
 					</div>
 				</div>
 			</div>
-			<div class="container">
-				<video width="100%" height="auto" autoplay="autoplay">
-					<source src="assets/img/Boucle-test_1.mp4" type="video/mp4" />
-				</video>
-			</div>
-			<div class="container">
+			<div class="container funct-button">
 				<div class="row">
 					<div class="col-sm-12 center space-top space-bottom">
 						<button class="btn btn-primary btn-big">Je découvre les fonctionnalités</button>
