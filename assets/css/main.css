@@ -197,20 +197,25 @@ a:hover{
 	height:auto;
 	z-index:0;
 }
+#functionalities .funct-title, #functionalities .funct-button{
+	position:absolute;
+	z-index:2;
+	width:100%;	
+}
 #functionalities .funct-title{
-	position:absolute;
-	z-index:1;
 	top:0;
-	width:100%;	
 }
-
 #functionalities .funct-button{
-	position:absolute;
-	z-index:1;
 	bottom:0;
-	width:100%;	
 }
-
+#functionalities .video-overlay{
+	left:0;
+	top:0;
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:1;
+}
 /*CUSTOMPOSTER*/
 #customPoster{
 	position:relative;
@@ -429,6 +434,9 @@ ul.social-network li {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+	.btn{
+		white-space: normal;
+	}
 	.programs-desc{
 		position:initial;
 	}
@@ -468,5 +476,15 @@ ul.social-network li {
 	}
 	#customPoster .background-overlay{
 		display:none;
+	}
+	#functionalities{
+	position:relative;
+	}
+	#functionalities h1{
+		color: black;
+	}
+	#functionalities .funct-title, #functionalities .funct-button{
+		position:relative;
+		z-index:2;
 	}
 }

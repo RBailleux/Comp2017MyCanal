@@ -123,9 +123,6 @@
 			</div>
 		</div>
 		<div id="functionalities">
-			<video class="video-background" autoplay="autoplay" loop>
-				<source src="assets/img/Boucle-test_1.mp4" type="video/mp4" />
-			</video>
 			<div class="container funct-title">
 				<div class="row">
 					<div class="col-sm-12">
@@ -133,6 +130,10 @@
 					</div>
 				</div>
 			</div>
+			<div class="video-overlay"></div>
+			<video class="video-background" autoplay="autoplay" loop>
+				<source src="assets/img/Boucle-test_1.mp4" type="video/mp4" />
+			</video>
 			<div class="container funct-button">
 				<div class="row">
 					<div class="col-sm-12 center space-top space-bottom">
