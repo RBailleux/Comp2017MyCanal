@@ -143,20 +143,10 @@
 			</div>
 		</div>
 		<div id="customPoster">
-			<span class="background-overlay"></span>
-			<div class="container container-fill">
-				<div class="row">
-					<div class="col-sm-12">
-						<h1 class="uppercase center space-top no-padding">Générateur original de contenus originaux</h1>
-					</div>
-				</div>
-			</div>
-			<div class="container centerOnBottom">
-				<div class="row">
-					<div class="col-sm-12 center">
-						<button class="btn btn-primary btn-big">Je profite d'un mois gratuit*</button>
-					</div>
-				</div>
+			<div><h1 class="uppercase center no-margin-top padding-top no-padding bicolor">Générateur original de contenus originaux</h1></div>
+			<div class="row full-row centerOnTop">
+				<div class="col-sm-6 col-xs-12 custom-left"></div>
+				<div class="col-sm-6 col-xs-12 custom-right"></div>
 			</div>
 		</div>
 		<!-- PRICES -->
