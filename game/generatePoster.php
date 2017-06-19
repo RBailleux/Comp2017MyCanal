@@ -37,7 +37,7 @@
 				'licorne',
 				'magicien',
 				'medecin',
-				'miltaire',
+				'militaire',
 				'ours',
 				'policier',
 				'pompier',
