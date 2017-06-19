@@ -41,6 +41,7 @@
 				'ours',
 				'policier',
 				'pompier',
+				'pompom-girl',
 				'robot',
 				'rockeur',
 				'roi',
