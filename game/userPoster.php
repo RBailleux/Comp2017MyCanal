@@ -1,7 +1,7 @@
 <?php
 	header ("Content-type: image/png");
 	require_once 'generatePoster.php';
-	$poster = new generatePoster('film', 'soleil.jpg', 'drama', rand(), 'ffffff', 'Description de l\'affiche');
+	$poster = new generatePoster('random', 'random', 'drama', 'Premier test');
 	$poster->createPNG();
 	readfile($poster->getPNG());
 	
