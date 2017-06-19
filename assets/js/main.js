@@ -34,9 +34,98 @@ jQuery(document).ready(function(){
 	jQuery('.pricing-container').focus(function(){
 		pricingShadow(this);
 	});
-	//Game
+
+	//GAME
+	var topHeight = jQuery('#customPoster h1').outerHeight()+'px';
+	jQuery('#customPoster .custom-right .examples-main.images').each(function(){
+		jQuery(this).css('top', topHeight);
+	});
+	jQuery('#customPoster .custom-left').css('padding-top', topHeight);
+	jQuery('#customPoster .examples-main img').each(function(){
+		jQuery(this).hide();
+	});
+	
+	fadeInExamples();
+	
+	
+		
 	//jQuery('#customPoster').load('./game/userPoster.php');
 });
+function fadeInExamples(){
+	var durationAnimation = 1500;
+	
+	jQuery('#customPoster .examples-main.images img').each(function(){
+		jQuery(this).hide();
+	});
+	jQuery('#customPoster .examples-main.words .word').each(function(){
+		jQuery(this).hide();
+	});
+	
+	jQuery('[data-serie="guyane"] img[data-step="1"]').fadeIn(durationAnimation, function(){
+		jQuery('[data-serie="guyane"] img[data-step="2"]').fadeIn(durationAnimation, function(){
+			jQuery('[data-serie="guyane"] img[data-step="3"]').fadeIn(durationAnimation, function(){
+				setTimeout(function(){
+					jQuery('[data-serie="guyane"] img').each(function(){
+						jQuery(this).hide();
+					});
+					jQuery('[data-serie="borgia"] img[data-step="1"]').fadeIn(durationAnimation, function(){
+						jQuery('[data-serie="borgia"] img[data-step="2"]').fadeIn(durationAnimation, function(){
+							jQuery('[data-serie="borgia"] img[data-step="3"]').fadeIn(durationAnimation, function(){
+								setTimeout(function(){
+									jQuery('[data-serie="borgia"] img').each(function(){
+										jQuery(this).hide();
+									});
+									jQuery('[data-serie="revenants"] img[data-step="1"]').fadeIn(durationAnimation, function(){
+										jQuery('[data-serie="revenants"] img[data-step="2"]').fadeIn(durationAnimation, function(){
+											jQuery('[data-serie="revenants"] img[data-step="3"]').fadeIn(durationAnimation, function(){
+												setTimeout(function(){
+													fadeInExamples();
+												}, durationAnimation+2000);
+											})
+										})
+									});
+								},durationAnimation+2000)
+							})
+						})
+					});
+				},durationAnimation+2000)
+			})
+		})
+	});
+	
+	jQuery('[data-serie="guyane"] .word[data-step="1"]').fadeIn(durationAnimation, function(){
+		jQuery('[data-serie="guyane"] .word[data-step="2"]').fadeIn(durationAnimation, function(){
+			jQuery('[data-serie="guyane"] .word[data-step="3"]').fadeIn(durationAnimation, function(){
+				jQuery('[data-serie="guyane"] .word[data-step="4"]').fadeIn(durationAnimation);
+				setTimeout(function(){
+					jQuery('[data-serie="guyane"] .word').each(function(){
+						jQuery(this).hide();
+					});
+					jQuery('[data-serie="borgia"] .word[data-step="1"]').fadeIn(durationAnimation, function(){
+						jQuery('[data-serie="borgia"] .word[data-step="2"]').fadeIn(durationAnimation, function(){
+							jQuery('[data-serie="borgia"] .word[data-step="3"]').fadeIn(durationAnimation, function(){
+								jQuery('[data-serie="borgia"] .word[data-step="4"]').fadeIn(durationAnimation);
+								setTimeout(function(){
+									jQuery('[data-serie="borgia"] .word').each(function(){
+										jQuery(this).hide();
+									});
+									jQuery('[data-serie="revenants"] .word[data-step="1"]').fadeIn(durationAnimation, function(){
+										jQuery('[data-serie="revenants"] .word[data-step="2"]').fadeIn(durationAnimation, function(){
+											jQuery('[data-serie="revenants"] .word[data-step="3"]').fadeIn(durationAnimation, function(){
+												jQuery('[data-serie="revenants"] .word[data-step="4"]').fadeIn(durationAnimation);
+											})
+										})
+									});
+								},durationAnimation+2000)
+							})
+						})
+					});
+				},durationAnimation+2000)
+			})
+		})
+	});
+}
+
 function pricingShadow(element){
 	jQuery('.pricing-container').each(function(){
 		jQuery(this).removeClass('active');

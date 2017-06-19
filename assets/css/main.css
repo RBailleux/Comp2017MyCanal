@@ -116,8 +116,14 @@ a:hover{
 .padding-top{
 	padding-top:30px;
 }
+.padding-bottom{
+	padding-bottom:30px;
+}
 .no-margin-top{
 	margin-top:0;
+}
+.no-margin-bottom{
+	margin-bottom:0;
 }
 /*PROGRAMS*/
 #logoMyCanal{
@@ -270,6 +276,27 @@ a:hover{
 	-webkit-text-fill-color: transparent;
 	position:relative;
 	z-index:2;
+}
+#customPoster .examples-main{
+	position:relative;
+}
+#customPoster .examples-main.images .examples-step{
+	position:absolute;
+	max-width:80%;
+	height:auto;
+	left:0;
+	right:0;
+	margin:0 auto;
+}
+#customPoster .custom-right{
+	position:relative;
+}
+#customPoster .generator-desc{
+	color:white;
+}
+#customPoster .examples-main.words{
+	color:white;
+	font-size:2em;
 }
 
 /*PRICING*/

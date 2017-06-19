@@ -99,7 +99,8 @@
 				'Le plus gentil des oursons',
 				'À la recherche de la baguette magique',
 				'La contre-attaque saisonnière',
-				'Un étalon flamboyant qui tire plus vite que son ombre'
+				'Un étalon flamboyant qui tire plus vite que son ombre',
+				'Tu m\'enlève ça de la bouche'
 		);
 		public $character;
 		public $background;
