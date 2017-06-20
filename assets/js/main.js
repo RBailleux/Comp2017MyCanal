@@ -45,16 +45,14 @@ jQuery(document).ready(function(){
 		jQuery(this).hide();
 	});
 	jQuery('#customPoster .diamond').each(function(){
-		jQuery(this).css('width',jQuery(this).outerWidth()+100+'px')
+		jQuery(this).css('width',jQuery(this).outerWidth()+50+'px')
 	})
 	
 	jQuery('.start-generator').click(function(e){
 		jQuery('.examples-container').data('doexamples', '0');
 		jQuery('.examples-container').removeClass('examples-started');
-		jQuery('#customPoster .custom-left').load('./game/userPoster.php');
+		jQuery('#customPoster #generator').load('./game/userPoster.php');
 	});
-		
-	//jQuery('#customPoster').load('./game/userPoster.php');
 });
 jQuery(window).scroll(function(){
 	var windowPosition = jQuery(window).scrollTop();

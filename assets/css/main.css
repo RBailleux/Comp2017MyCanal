@@ -298,7 +298,7 @@ a:hover{
 #customPoster .generator-desc{
 	color:white;
 }
-#customPoster .examples-main.words, #customPoster .symbols{
+#customPoster .words, #customPoster .symbols{
 	color:white;
 	font-size:2em;
 	font-family:"CanalBoldRomain", sans-serif;
@@ -328,7 +328,40 @@ a:hover{
     height: 2.5em;
     line-height: 2.5em;
 }
+#customPoster .generator-step.word{
+	cursor:pointer;
+	color:#757575;
+}
+#customPoster .generator-step.word input{
+	background-color:transparent;
+	border:none;
+}
+#customPoster .generator-step.word input:focus{
+	outline:none;
+}
+#customPoster .generator-step.word input::placeholder{
+	text-transform:uppercase;
+}
 
+#customPoster .generator-input{
+	position:relative;
+}
+#customPoster .generator-input input{
+	position:absolute;
+	left:0;
+	line-height:2.5em;
+	z-index:1;
+}
+#customPoster .generator-input .copyfrominput{
+	text-transform:none;
+	color:transparent;
+	position:absolute;
+	width:auto!important;
+	min-width:2.5em;
+	left:30px;
+	height:2.5em;
+	z-index:0;
+}
 /*PRICING*/
 .pricing-section{
 	display:flex;

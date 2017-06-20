@@ -1,11 +1,11 @@
 <?php
-	header ("Content-type: image/png");
-	require_once 'generatePoster.php';
-	$poster = new generatePoster('random', 'random', 'drama', 'Premier test');
-	$poster->createPNG();
-	readfile($poster->getPNG());
+// 	header ("Content-type: image/png");
+// 	require_once 'generatePoster.php';
+// 	$poster = new generatePoster('random', 'random', 'random', 'Premier test');
+// 	$poster->createPNG();
+// 	readfile($poster->getPNG());
 	
-	die();
+// 	die();
 main();
 function main(){
 	if(!isset($_GET['step'])){
@@ -40,7 +40,36 @@ function main(){
 
 function step0(){
 ?>
-	<button class="btn btn-primary nextStep" data-step="1">Commencer</button>
+				<div class="col-sm-6 col-xs-12 custom-left row no-margin">
+					<div class="col-xs-12">
+						<p class="generator-desc">Devenez créateur de contenu original</p>
+					</div>
+					<div class="col-xs-12 words-container examples-container" data-doexamples="1">
+						<div class="generator-main symbols">
+							<p>+</p>
+							<p>+</p>
+							<p>=</p>
+						</div>
+						<div class="generator-main words">
+							<div class="generator-step word" data-custom-step="1">
+								<span class="diamond">Sélectionnez un décor</span>
+							</div>
+							<div class="generator-step word" data-custom-step="2">
+								<span class="diamond">Sélectionnez un genre</span>
+							</div>
+							<div class="generator-step word" data-custom-step="3">
+								<span class="diamond">Sélectionnez un personnage</span>
+							</div>
+							<div class="generator-step word generator-input" data-custom-step="4">
+								<input type="text" placeholder="Tapez le nom de votre série" maxlength="30">
+								<span class="diamond copyfrominput">TAPEZ LE NOM DE VOTRE SÉRIE</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-12 custom-right">
+
+				</div>
 <?php 
 
 }
@@ -83,6 +112,18 @@ function stepError(){
 
 <script>
 jQuery(document).ready(function(){
+	var topHeight = jQuery('#customPoster h1').outerHeight()+'px';
+	jQuery('#customPoster .custom-left').css('padding-top', topHeight);
+
+	jQuery('#customPoster .diamond').each(function(){
+		jQuery(this).css('width',jQuery(this).outerWidth()+30+'px')
+	})
+	jQuery('.generator-step.word').click(function(event){
+		console.log(jQuery(this).data('custom-step'));
+	});
+	jQuery('.generator-input input').keyup(function(){
+		jQuery('.generator-input .copyfrominput').text(jQuery('.generator-input input').val());
+	});
 	jQuery('button.nextStep').click(function(event){
 		event.preventDefault();
 		var step = jQuery(this).attr('data-step');
