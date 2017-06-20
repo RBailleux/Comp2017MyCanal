@@ -145,7 +145,7 @@
 		<div id="customPoster">
 			<div><h1 class="uppercase center no-margin-top no-margin-bottom padding-top padding-bottom no-padding bicolor">Générateur original de contenus originaux</h1></div>
 			<div class="row full-row centerOnTop">
-				<div class="col-sm-6 col-xs-12 custom-left row">
+				<div class="col-sm-6 col-xs-12 custom-left row no-margin">
 					<div class="col-xs-12">
 						<p class="generator-desc">Devenez créateur de contenu original</p>
 					</div>

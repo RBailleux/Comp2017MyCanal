@@ -119,6 +119,10 @@ a:hover{
 .padding-bottom{
 	padding-bottom:30px;
 }
+.no-margin{
+	margin-left:0;
+	margin-right:0;
+}
 .no-margin-top{
 	margin-top:0;
 }
