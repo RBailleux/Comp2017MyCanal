@@ -122,7 +122,12 @@ jQuery(document).ready(function(){
 		console.log(jQuery(this).data('custom-step'));
 	});
 	jQuery('.generator-input input').keyup(function(){
-		jQuery('.generator-input .copyfrominput').text(jQuery('.generator-input input').val());
+		var text = jQuery('.generator-input input').val();
+		if(text == ""){
+			text = "TAPEZ LE NOM DE VOTRE SÉRIE";
+		}
+		jQuery('.generator-input .copyfrominput').text(text);
+		
 	});
 	jQuery('button.nextStep').click(function(event){
 		event.preventDefault();

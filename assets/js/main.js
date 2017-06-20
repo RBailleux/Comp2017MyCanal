@@ -35,6 +35,24 @@ jQuery(document).ready(function(){
 		pricingShadow(this);
 	});
 
+	var windowPosition = jQuery(window).scrollTop();
+	//START VIDEO
+	var videoPosition = jQuery(".video-background").offset().top;
+	var videoHeight = jQuery(".video-background").outerHeight();
+	if(windowPosition >= (videoPosition - (videoHeight/2))){
+		var cvideo = document.getElementById("cvideo"); 
+		cvideo.play();
+	}
+	//START EXAMPLES
+	var customPosterPosition = jQuery("#customPoster").offset().top;
+	var customPosterHeight = jQuery("#customPoster").outerHeight();
+	if(windowPosition >= (customPosterPosition - (customPosterHeight/2))){
+		if(!jQuery('.examples-container').hasClass('examples-started')){
+			jQuery('.examples-container').addClass('examples-started');
+			fadeInExamples();
+		}
+	}
+	
 	//GAME
 	var topHeight = jQuery('#customPoster h1').outerHeight()+'px';
 	jQuery('#customPoster .custom-right .examples-main.images').each(function(){
@@ -45,7 +63,8 @@ jQuery(document).ready(function(){
 		jQuery(this).hide();
 	});
 	jQuery('#customPoster .diamond').each(function(){
-		jQuery(this).css('width',jQuery(this).outerWidth()+50+'px')
+		var _this = this;
+		jQuery(_this).css('width',jQuery(_this).outerWidth()+50+'px')
 	})
 	
 	jQuery('.start-generator').click(function(e){
