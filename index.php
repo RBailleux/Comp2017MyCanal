@@ -149,7 +149,7 @@
 					<div class="col-xs-12">
 						<p class="generator-desc">Devenez créateur de contenu original</p>
 					</div>
-					<div class="col-xs-12 words-container">
+					<div class="col-xs-12 words-container examples-container" data-doexamples="true">
 						<div class="examples-main symbols">
 							<p>+</p>
 							<p>+</p>

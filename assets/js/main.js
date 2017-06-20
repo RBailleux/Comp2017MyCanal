@@ -48,15 +48,14 @@ jQuery(document).ready(function(){
 		jQuery(this).css('width',jQuery(this).outerWidth()+100+'px')
 	})
 	
-	fadeInExamples();
 	
+	fadeInExamples();
 	
 		
 	//jQuery('#customPoster').load('./game/userPoster.php');
 });
 function fadeInExamples(){
 	var durationAnimation = 1500;
-	
 	jQuery('#customPoster .examples-main.images img').each(function(){
 		jQuery(this).hide();
 	});
@@ -82,7 +81,9 @@ function fadeInExamples(){
 										jQuery('[data-serie="revenants"] img[data-step="2"]').fadeIn(durationAnimation, function(){ //1500
 											jQuery('[data-serie="revenants"] img[data-step="3"]').fadeIn(durationAnimation, function(){ //1500
 												setTimeout(function(){ //3500
-													fadeInExamples();
+													if(jQuery('.examples-container').data('doexamples')){
+														fadeInExamples();
+													}
 												}, durationAnimation+2000);
 											})
 										})
