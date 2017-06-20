@@ -48,19 +48,34 @@ jQuery(document).ready(function(){
 		jQuery(this).css('width',jQuery(this).outerWidth()+100+'px')
 	})
 	
-	
-	fadeInExamples();
-	
 	jQuery('.start-generator').click(function(e){
 		jQuery('.examples-container').data('doexamples', '0');
+		jQuery('.examples-container').removeClass('examples-started');
 		jQuery('#customPoster .custom-left').load('./game/userPoster.php');
 	});
 		
 	//jQuery('#customPoster').load('./game/userPoster.php');
 });
 jQuery(window).scroll(function(){
-	
+	var windowPosition = jQuery(window).scrollTop();
+	//START VIDEO
+	var videoPosition = jQuery(".video-background").offset().top;
+	var videoHeight = jQuery(".video-background").outerHeight();
+	if(windowPosition >= (videoPosition - (videoHeight/2))){
+		var cvideo = document.getElementById("cvideo"); 
+		cvideo.play();
+	}
+	//START EXAMPLES
+	var customPosterPosition = jQuery("#customPoster").offset().top;
+	var customPosterHeight = jQuery("#customPoster").outerHeight();
+	if(windowPosition >= (customPosterPosition - (customPosterHeight/2))){
+		if(!jQuery('.examples-container').hasClass('examples-started')){
+			jQuery('.examples-container').addClass('examples-started');
+			fadeInExamples();
+		}
+	}
 });
+
 function fadeInExamples(){
 	var durationAnimation = 1500;
 	jQuery('#customPoster .examples-main.images img').each(function(){

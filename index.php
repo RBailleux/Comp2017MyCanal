@@ -131,7 +131,7 @@
 				</div>
 			</div>
 			<div class="video-overlay"></div>
-			<video class="video-background" autoplay="autoplay" loop>
+			<video id="cvideo" class="video-background" loop>
 				<source src="assets/img/Boucle-test_1.mp4" type="video/mp4" />
 			</video>
 			<div class="container funct-button">
@@ -149,7 +149,7 @@
 					<div class="col-xs-12">
 						<p class="generator-desc">Devenez créateur de contenu original</p>
 					</div>
-					<div class="col-xs-12 words-container examples-container" data-doexamples="true">
+					<div class="col-xs-12 words-container examples-container" data-doexamples="1">
 						<div class="examples-main symbols">
 							<p>+</p>
 							<p>+</p>
