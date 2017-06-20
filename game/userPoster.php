@@ -53,6 +53,28 @@ function step0(){
 						<div class="generator-main words">
 							<div class="generator-step word" data-custom-step="1">
 								<span class="diamond">Sélectionnez un décor</span>
+								<div class="generator-backgrounds-list" style="display:none;">
+									<p data-background-name="aeroport">Aéroport</p>
+									<p data-background-name="avion">Avion</p>
+									<p data-background-name="casino">Casino</p>
+									<p data-background-name="chambre">Chambre</p>
+									<p data-background-name="chateau">Chateau</p>
+									<p data-background-name="ciel">Ciel</p>
+									<p data-background-name="cirque">Cirque</p>
+									<p data-background-name="club">Club</p>
+									<p data-background-name="desert">Désert</p>
+									<p data-background-name="ecole">École</p>
+									<p data-background-name="eglise">Église</p>
+									<p data-background-name="fete-foraine">Fête foraine</p>
+									<p data-background-name="foret">Forêt</p>
+									<p data-background-name="galaxie">Galaxie</p>
+									<p data-background-name="hopital">Hôpital</p>
+									<p data-background-name="jungle">Jungle</p>
+									<p data-background-name="mer">Mer</p>
+									<p data-background-name="montagne">Montagne</p>
+									<p data-background-name="sous-marin">Sous-marin</p>
+									<p data-background-name="tour-eiffel">Tour Eiffel</p>
+								</div>
 							</div>
 							<div class="generator-step word" data-custom-step="2">
 								<span class="diamond">Sélectionnez un genre</span>
@@ -128,6 +150,12 @@ jQuery(document).ready(function(){
 		}
 		jQuery('.generator-input .copyfrominput').text(text);
 		
+	});
+
+	jQuery('.generator-step.word[data-custom-step="1"]').click(function(){
+		jQuery('.generator-step.word').not(this).hide();
+		jQuery('.generator-main.symbols').hide();
+		jQuery('.generator-backgrounds-list').show();
 	});
 	jQuery('button.nextStep').click(function(event){
 		event.preventDefault();
