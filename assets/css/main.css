@@ -298,9 +298,35 @@ a:hover{
 #customPoster .generator-desc{
 	color:white;
 }
-#customPoster .examples-main.words{
+#customPoster .examples-main.words, #customPoster .symbols{
 	color:white;
 	font-size:2em;
+	font-family:"CanalBoldRomain", sans-serif;
+	text-transform:uppercase;
+}
+#customPoster .examples-main.words div{
+	height:2.5em;
+}
+#customPoster .symbols{
+	position:absolute;
+}
+#customPoster .symbols p:nth-child(1){
+	padding-top:3.5em;
+}
+#customPoster .symbols p:nth-child(2), #customPoster .symbols p:nth-child(3){
+	padding-top:2em;
+}
+#customPoster .word{
+	padding-top:1em;
+}
+#customPoster .word .diamond{
+    background-image: url(../img/diamond.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    display:inline-block;
+    height: 2.5em;
+    line-height: 2.5em;
 }
 
 /*PRICING*/

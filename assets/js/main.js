@@ -44,6 +44,9 @@ jQuery(document).ready(function(){
 	jQuery('#customPoster .examples-main img').each(function(){
 		jQuery(this).hide();
 	});
+	jQuery('#customPoster .diamond').each(function(){
+		jQuery(this).css('width',jQuery(this).outerWidth()+100+'px')
+	})
 	
 	fadeInExamples();
 	
