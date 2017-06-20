@@ -23,6 +23,7 @@
 				'tour-eiffel'
 		);
 		public $characterList = array(
+				'animaux',
 				'businessman',
 				'catcheur',
 				'couple',
@@ -32,13 +33,13 @@
 				'facteur',
 				'fashionista',
 				'fille',
+				'gangster',
 				'geek',
 				'hacker',
 				'licorne',
 				'magicien',
 				'medecin',
 				'militaire',
-				'ours',
 				'policier',
 				'pompier',
 				'pompom-girl',

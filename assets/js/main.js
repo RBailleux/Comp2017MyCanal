@@ -51,8 +51,15 @@ jQuery(document).ready(function(){
 	
 	fadeInExamples();
 	
+	jQuery('.start-generator').click(function(e){
+		jQuery('.examples-container').data('doexamples', '0');
+		jQuery('#customPoster .custom-left').load('./game/userPoster.php');
+	});
 		
 	//jQuery('#customPoster').load('./game/userPoster.php');
+});
+jQuery(window).scroll(function(){
+	
 });
 function fadeInExamples(){
 	var durationAnimation = 1500;
