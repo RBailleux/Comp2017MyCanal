@@ -1,11 +1,4 @@
 <?php
-// 	header ("Content-type: image/png");
-// 	require_once 'generatePoster.php';
-// 	$poster = new generatePoster('random', 'random', 'random', 'Premier test');
-// 	$poster->createPNG();
-// 	readfile($poster->getPNG());
-	
-// 	die();
 main();
 function main(){
 	if(!isset($_GET['step'])){
@@ -44,7 +37,7 @@ function step0(){
 					<div class="col-xs-12">
 						<p class="generator-desc">Devenez créateur de contenu original</p>
 					</div>
-					<div class="col-xs-12 words-container examples-container" data-doexamples="1">
+					<div class="col-xs-12 words-container examples-container" style="height:500px" data-doexamples="1">
 						<div class="generator-main symbols">
 							<p>+</p>
 							<p>+</p>
@@ -78,14 +71,66 @@ function step0(){
 							</div>
 							<div class="generator-step word" data-custom-step="2">
 								<span class="diamond">Sélectionnez un genre</span>
+								<div class="generator-genres-list" style="display:none;">
+									<p data-genre-name="comedie">Comédie</p>
+									<p data-genre-name="drame">Drame</p>
+									<p data-genre-name="romance">Romance</p>
+									<p data-genre-name="action">Action</p>
+									<p data-genre-name="historique">Historique</p>
+									<p data-genre-name="western">Western</p>
+									<p data-genre-name="horreur">Horreur</p>
+									<p data-genre-name="thriller">Thriller</p>
+									<p data-genre-name="fantastique">Fantastique</p>
+									<p data-genre-name="science-fiction">Science-fiction</p>
+									<p data-genre-name="erotique">Érotique</p>
+									<p data-genre-name="catastrophe">Catastrophe</p>
+									<p data-genre-name="medieval">Médiéval</p>
+									<p data-genre-name="film-auteur">Film d'auteur</p>
+									<p data-genre-name="autobiographie">Autobiographie</p>
+									<p data-genre-name="espionnage">Espionnage</p>
+								</div>
 							</div>
 							<div class="generator-step word" data-custom-step="3">
 								<span class="diamond">Sélectionnez un personnage</span>
+								<div class="generator-characters-list" style="display:none;">
+									<p data-character-name="animaux">Animaux</p>
+									<p data-character-name="businessman">Homme d'affaire</p>
+									<p data-character-name="catcheur">Catcheur</p>
+									<p data-character-name="couple">Couple</p>
+									<p data-character-name="creature">Créature</p>
+									<p data-character-name="danseuse">Danseuse / danseur</p>
+									<p data-character-name="enfant">Enfant</p>
+									<p data-character-name="facteur">Facteur</p>
+									<p data-character-name="fashionista">Fashionista</p>
+									<p data-character-name="fille">Fille</p>
+									<p data-character-name="gangster">Gangster</p>
+									<p data-character-name="geek">Geek</p>
+									<p data-character-name="hacker">Hacker</p>
+									<p data-character-name="magicien">Magicien</p>
+									<p data-character-name="medecin">Médecin</p>
+									<p data-character-name="militaire">Militaire</p>
+									<p data-character-name="policier">Policier</p>
+									<p data-character-name="pompier">Pompier</p>
+									<p data-character-name="pompom-girl">Pompom girl</p>
+									<p data-character-name="robot">Robot</p>
+									<p data-character-name="rockeur">Rockeur</p>
+									<p data-character-name="roi">Roi</p>
+									<p data-character-name="rugbyman">Rugbyman</p>
+									<p data-character-name="sauvage">Sauvage</p>
+									<p data-character-name="sportif">Sportif</p>
+									<p data-character-name="sumo">Sumo</p>
+									<p data-character-name="viking">Viking</p>
+								</div>
 							</div>
 							<div class="generator-step word generator-input" data-custom-step="4">
 								<input type="text" placeholder="Tapez le nom de votre série" maxlength="30">
 								<span class="diamond copyfrominput">TAPEZ LE NOM DE VOTRE SÉRIE</span>
 							</div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="generator-step generator-submit center">
+							<button class="btn btn-primary btn-big">Générer</button>
 						</div>
 					</div>
 				</div>
@@ -140,9 +185,9 @@ jQuery(document).ready(function(){
 	jQuery('#customPoster .diamond').each(function(){
 		jQuery(this).css('width',jQuery(this).outerWidth()+30+'px')
 	})
-	jQuery('.generator-step.word').click(function(event){
-		console.log(jQuery(this).data('custom-step'));
-	});
+// 	jQuery('.generator-step.word').click(function(event){
+// 		console.log(jQuery(this).data('custom-step'));
+// 	});
 	jQuery('.generator-input input').keyup(function(){
 		var text = jQuery('.generator-input input').val();
 		if(text == ""){
@@ -152,50 +197,131 @@ jQuery(document).ready(function(){
 		
 	});
 
+	//DECOR BEGIN
 	jQuery('.generator-step.word[data-custom-step="1"]').click(function(){
-		jQuery('.generator-step.word').not(this).hide();
-		jQuery('.generator-main.symbols').hide();
-		jQuery('.generator-backgrounds-list').show();
+		jQuery('.generator-step.word').not(this).css('display','none');
+		jQuery('.generator-main.symbols').css('display','none');
+		jQuery('.generator-backgrounds-list').css('display','block');
 	});
-	jQuery('button.nextStep').click(function(event){
-		event.preventDefault();
-		var step = jQuery(this).attr('data-step');
-		setCookie('step', step, 30);
-		jQuery('.loader-spinner').show();
-		switch(step){
-			case '1':
-				jQuery('#customPoster').load('./game/userPoster.php?step='+step, function() {
-					jQuery('.loader-spinner').hide();
-					jQuery('button.nextStep').click(function(){
-						category = jQuery(this).attr('data-category');
-						setCookie('category', category, 30);
-					});
-				});
-				break;
-			case '2':
-				jQuery('#customPoster').load('./game/userPoster.php?step='+step, function(){
-					jQuery('.loader-spinner').hide();
-					jQuery('button.nextStep').click(function(){
-						name = jQuery('#customPoster .stepName').val();
-						setCookie('name', name, 30);
-					});
-				});
-				break;
-			case '3':
-				jQuery('#customPoster').load('./game/userPoster.php?step='+step, function(){
-					jQuery('.loader-spinner').hide();
-					jQuery('button.nextStep').click(function(){
-						name = jQuery('#customPoster .stepName').val();
-						setCookie('name', name, 30);
-					});
-				});
-				break;
-			case '4':
-				break;
-			default:
-				break;
+
+	jQuery('.generator-backgrounds-list p').click(function(){
+		var background = jQuery(this).text();
+		jQuery('.generator-step.word[data-custom-step="1"] span').text(background);
+		jQuery('.generator-step.word[data-custom-step="1"] span').attr('data-selected-background', jQuery(this).data('background-name'));
+
+		setTimeout(function(){
+			jQuery('#customPoster .generator-step.word[data-custom-step="1"] .diamond').each(function(){
+				jQuery(this).css('width','auto');
+				jQuery(this).css('width',jQuery(this).outerWidth()+30+'px')
+			});
+			jQuery('.generator-step.word').css('display','block');
+			jQuery('.generator-main.symbols').css('display','block');
+			jQuery('.generator-backgrounds-list').css('display','none');
+		},1);
+	});
+	//DECOR END
+	
+	//GENRE BEGIN
+	jQuery('.generator-step.word[data-custom-step="2"]').click(function(){
+		jQuery('.generator-step.word').not(this).css('display','none');
+		jQuery('.generator-main.symbols').css('display','none');
+		jQuery('.generator-genres-list').css('display','block');
+	});
+
+	jQuery('.generator-genres-list p').click(function(){
+		var genre = jQuery(this).text();
+		jQuery('.generator-step.word[data-custom-step="2"] span').text(genre);
+		jQuery('.generator-step.word[data-custom-step="2"] span').attr('data-selected-genre', jQuery(this).data('genre-name'));
+
+		setTimeout(function(){
+			jQuery('#customPoster .generator-step.word[data-custom-step="2"] .diamond').each(function(){
+				jQuery(this).css('width','auto');
+				jQuery(this).css('width',jQuery(this).outerWidth()+30+'px')
+			});
+			jQuery('.generator-step.word').css('display','block');
+			jQuery('.generator-main.symbols').css('display','block');
+			jQuery('.generator-genres-list').css('display','none');
+		},1);
+	});
+	//GENRE END
+	
+	//CHARACTERS BEGIN
+	jQuery('.generator-step.word[data-custom-step="3"]').click(function(){
+		jQuery('.generator-step.word').not(this).css('display','none');
+		jQuery('.generator-main.symbols').css('display','none');
+		jQuery('.generator-characters-list').css('display','block');
+	});
+
+	jQuery('.generator-characters-list p').click(function(){
+		var character = jQuery(this).text();
+		jQuery('.generator-step.word[data-custom-step="3"] span').text(character);
+		jQuery('.generator-step.word[data-custom-step="3"] span').attr('data-selected-character', jQuery(this).data('character-name'));
+
+		setTimeout(function(){
+			jQuery('#customPoster .generator-step.word[data-custom-step="3"] .diamond').each(function(){
+				jQuery(this).css('width','auto');
+				jQuery(this).css('width',jQuery(this).outerWidth()+30+'px')
+			});
+			jQuery('.generator-step.word').css('display','block');
+			jQuery('.generator-main.symbols').css('display','block');
+			jQuery('.generator-characters-list').css('display','none');
+		},1);
+	});
+	//CHARACTERS END
+	
+	//DO THE MAGICAL STUFF
+	jQuery('.generator-submit button').click(function(){
+		var background = jQuery('.generator-step.word[data-custom-step="1"] span').attr('data-selected-background');
+		var genre = jQuery('.generator-step.word[data-custom-step="2"] span').attr('data-selected-genre');
+		var character = jQuery('.generator-step.word[data-custom-step="3"] span').attr('data-selected-character');
+		var name = encodeURI(jQuery('.generator-input input').val());
+		//jQuery('#customPoster #generator .custom-right').load('./game/finalPoster.php?background='+background+'&genre='+genre+'&character='+character+'&name='+name);
+		var url = './game/finalPoster.php?background='+background+'&genre='+genre+'&character='+character+'&name='+name
+		jQuery('#customPoster #generator .custom-right').html(
+			'<img style="max-width:100%; padding-top:150px;" src="'+url+'">'
+		);
+	});
+	
+	
+// 	jQuery('button.nextStep').click(function(event){
+// 		event.preventDefault();
+// 		var step = jQuery(this).attr('data-step');
+// 		setCookie('step', step, 30);
+// 		jQuery('.loader-spinner').show();
+// 		switch(step){
+// 			case '1':
+// 				jQuery('#customPoster').load('./game/userPoster.php?step='+step, function() {
+// 					jQuery('.loader-spinner').hide();
+// 					jQuery('button.nextStep').click(function(){
+// 						category = jQuery(this).attr('data-category');
+// 						setCookie('category', category, 30);
+// 					});
+// 				});
+// 				break;
+// 			case '2':
+// 				jQuery('#customPoster').load('./game/userPoster.php?step='+step, function(){
+// 					jQuery('.loader-spinner').hide();
+// 					jQuery('button.nextStep').click(function(){
+// 						name = jQuery('#customPoster .stepName').val();
+// 						setCookie('name', name, 30);
+// 					});
+// 				});
+// 				break;
+// 			case '3':
+// 				jQuery('#customPoster').load('./game/userPoster.php?step='+step, function(){
+// 					jQuery('.loader-spinner').hide();
+// 					jQuery('button.nextStep').click(function(){
+// 						name = jQuery('#customPoster .stepName').val();
+// 						setCookie('name', name, 30);
+// 					});
+// 				});
+// 				break;
+// 			case '4':
+// 				break;
+// 			default:
+// 				break;
 			
-		}
-	});
+// 		}
+// 	});
 });
 </script>
