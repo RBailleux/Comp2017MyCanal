@@ -5,6 +5,13 @@
 	$background = isset($_GET['background']) ? $_GET['background'] : 'random';
 	$genre = isset($_GET['genre']) ? $_GET['genre'] : 'random';
 	$name = isset($_GET['name']) ? urldecode($_GET['name']) : 'Je profite d\'un mois gratuit';
+	if(isset($_GET['name']) && $_GET['name'] != ''){
+		$name = $_GET['name'];
+	}
+	else{
+		$name = 'Je profite d\'un mois gratuit';
+	}
+	
 	$poster = new generatePoster($character, $background, $genre, $name);
 	$poster->createPNG();
 	readfile($poster->getPNG());
