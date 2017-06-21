@@ -339,10 +339,28 @@ jQuery(document).ready(function(){
 		var genre = jQuery('.generator-step.word[data-custom-step="2"] span').attr('data-selected-genre');
 		var character = jQuery('.generator-step.word[data-custom-step="3"] span').attr('data-selected-character');
 		var name = encodeURI(jQuery('.generator-input input').val());
-		var url = './game/finalPoster.php?background='+background+'&genre='+genre+'&character='+character+'&name='+name+'&nocache='+Date.now()
+		var url = './game/finalPoster.php?background='+background+'&genre='+genre+'&character='+character+'&name='+name+'&nocache='+Date.now();
 		jQuery('#customPoster #generator .custom-right').html(
-			'<img class="myGeneratedPoster" src="'+url+'">'
+			'<span id="img-container">'+
+				'<img id="finalUserPoster" class="myGeneratedPoster" src="'+url+'">'+
+				'<div class="shareItBlock">'+
+					'<p class="center white large-text" style="padding-top:50px">Maintenant, découvrez le contenu créé par Canal directement sur MyCanal</p>'+
+					'<p class="center"><button class="btn btn-primary">Profitez d\'un mois gratuit</button></p>'+
+				'</div>'+
+			'</span>'+
+			'<ul id="finalUserShare" class="social-network social-circle center" style="display:none; margin:0 auto;">'+
+	            '<li><a href="#" class="icoFacebook" title="Facebook"><i class="socicon socicon-facebook"></i></a></li>'+
+	            '<li><a href="#" class="icoTwitter" title="Twitter"><i class="socicon socicon-twitter"></i></a></li>'+
+	            '<li><a href="#" class="icoYoutube" title="Email"><i class="socicon socicon-mail"></i></a></li>'+
+	        '</ul>'+
+			'</div>'
 		);
+
+		var affiche = document.getElementById('finalUserPoster');
+		affiche.onload = function () {
+			jQuery('#img-container').addClass('shareIt');  
+			jQuery('#finalUserShare').css('display','block');
+	    };
 	}
 	
 // 	jQuery('button.nextStep').click(function(event){
