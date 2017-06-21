@@ -53,22 +53,22 @@
 				'viking'
 		);
 		public $genreList = array(
+				'action',
+				'autobiographie',
+				'cartoon',
+				'catastrophe',
 				'comedie',
 				'drame',
-				'romance',
-				'action',
-				'historique',
-				'western',
-				'horreur',
-				'thriller',
-				'fantastique',
-				'science-fiction',
 				'erotique',
-				'catastrophe',
-				'medieval',
+				'fantastique',
 				'film-auteur',
-				'autobiographie',
-				'espionnage'
+				'historique',
+				'horreur',
+				'medieval',
+				'romance',
+				'science-fiction',
+				'thriller',
+				'western'
 		);
 		public $descriptionList = array(
 				'Des fois tu gagnes, des fois tu apprends',
@@ -211,21 +211,24 @@
 		
 		public function addName()
 		{
-			//$font = $this->randomImageFromBackground();
-			$font = file_get_contents("https://github.com/google/fonts/raw/master/apache/droidserif/DroidSerif.ttf");
-			file_put_contents("font.ttf", $font);
+			$font = $this->randomFontFromGenre();
 			
-			$fontSize = 55;
+			$now = DateTime::createFromFormat('U.u', microtime(true));
+			$fontName = $now->format("YmdHisu").'.ttf';
 			
-			$bbox = imagettfbbox($fontSize, 0, 'font.ttf', $this->name);
+			file_put_contents($fontName, $font);
+			
+			$fontSize = 80;
+			
+			$bbox = imagettfbbox($fontSize, 0, $fontName, $this->name);
 			$center1 = (imagesx($this->image) / 2) - (($bbox[2] - $bbox[0]) / 2);
 			
-			imagettftext($this->image, $fontSize, 0, $center1, 2*($this->logoHigh), $this->color, 'font.ttf', $this->name);
+			imagettftext($this->image, $fontSize, 0, $center1, 2*($this->logoHigh), $this->color, $fontName, $this->name);
 		}
 		
 		protected function randomFontFromGenre(){
 			$randomFont = rand(1,$this->countFileInFolder('imageBase/fonts/'.$this->genre)).'.ttf';
-			return file_get_contents($randomFont);
+			return file_get_contents('imageBase/fonts/'.$this->genre.'/'.$randomFont);
 		}
 		
 		

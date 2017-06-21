@@ -72,22 +72,22 @@ function step0(){
 							<div class="generator-step word" data-custom-step="2">
 								<span class="diamond">Sélectionnez un genre</span>
 								<div class="generator-genres-list" style="display:none;">
+									<p data-genre-name="action">Action</p>
+									<p data-genre-name="autobiographie">Autobiographie</p>
+									<p data-genre-name="cartoon">Cartoon</p>
+									<p data-genre-name="catastrophe">Catastrophe</p>
 									<p data-genre-name="comedie">Comédie</p>
 									<p data-genre-name="drame">Drame</p>
-									<p data-genre-name="romance">Romance</p>
-									<p data-genre-name="action">Action</p>
-									<p data-genre-name="historique">Historique</p>
-									<p data-genre-name="western">Western</p>
-									<p data-genre-name="horreur">Horreur</p>
-									<p data-genre-name="thriller">Thriller</p>
-									<p data-genre-name="fantastique">Fantastique</p>
-									<p data-genre-name="science-fiction">Science-fiction</p>
 									<p data-genre-name="erotique">Érotique</p>
-									<p data-genre-name="catastrophe">Catastrophe</p>
-									<p data-genre-name="medieval">Médiéval</p>
+									<p data-genre-name="fantastique">Fantastique</p>
 									<p data-genre-name="film-auteur">Film d'auteur</p>
-									<p data-genre-name="autobiographie">Autobiographie</p>
-									<p data-genre-name="espionnage">Espionnage</p>
+									<p data-genre-name="historique">Historique</p>
+									<p data-genre-name="horreur">Horreur</p>
+									<p data-genre-name="medieval">Médiéval</p>
+									<p data-genre-name="romance">Romance</p>
+									<p data-genre-name="science-fiction">Science-fiction</p>
+									<p data-genre-name="thriller">Thriller</p>
+									<p data-genre-name="western">Western</p>
 								</div>
 							</div>
 							<div class="generator-step word" data-custom-step="3">
