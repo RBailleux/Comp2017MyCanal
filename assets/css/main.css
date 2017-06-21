@@ -335,12 +335,14 @@ a:hover{
 #customPoster .generator-step.word input{
 	background-color:transparent;
 	border:none;
+	color:white;
 }
 #customPoster .generator-step.word input:focus{
 	outline:none;
 }
 #customPoster .generator-step.word input::placeholder{
 	text-transform:uppercase;
+	color:white;
 }
 
 #customPoster .generator-input{
@@ -365,7 +367,7 @@ a:hover{
 #customPoster .generator-backgrounds-list, 
 #customPoster .generator-genres-list, 
 #customPoster .generator-characters-list{
-	max-height:430px;
+	max-height:340px;
 	overflow:scroll;
 	overflow-x:hidden;
 }
@@ -410,6 +412,24 @@ a:hover{
 #customPoster .generator-characters-list p:hover{
 	color:white;
 }
+
+#customPoster .myGeneratedPoster{
+    background: url(../img/imageloader.gif) no-repeat;
+    background-position: center 120px;
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+    margin-top: 150px;
+}
+#customPoster .generator-step.word .diamond:not(.copyfrominput){
+	color:white;
+}
+#customPoster .generator-step.word.isOpen .diamond:after {
+    content: "x";
+    position: absolute;
+    right: 10px;
+}
+
 /*PRICING*/
 .pricing-section{
 	display:flex;

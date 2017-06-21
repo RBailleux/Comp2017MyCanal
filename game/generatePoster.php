@@ -223,7 +223,7 @@
 			$bbox = imagettfbbox($fontSize, 0, $fontName, $this->name);
 			$center1 = (imagesx($this->image) / 2) - (($bbox[2] - $bbox[0]) / 2);
 			
-			imagettftext($this->image, $fontSize, 0, $center1, 2*($this->logoHigh), $this->color, $fontName, $this->name);
+			imagettftext($this->image, $fontSize, 0, $center1, 6*($this->logoHigh), $this->color, $fontName, $this->name);
 		}
 		
 		protected function randomFontFromGenre(){
@@ -245,7 +245,7 @@
 				$bbox = imagettfbbox($fontSize, 0, 'canal.ttf', $description);
 				$center1 = (imagesx($this->image) / 2) - (($bbox[2] - $bbox[0]) / 2);
 				
-				imagettftext($this->image, $fontSize, 0, $center1, (6+$index)*($this->logoHigh), $this->color, 'canal.ttf', $description);
+				imagettftext($this->image, $fontSize, 0, $center1, (8+$index)*($this->logoHigh), $this->color, 'canal.ttf', $description);
 			}
 			
 		}

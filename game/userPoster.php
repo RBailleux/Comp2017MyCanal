@@ -37,7 +37,7 @@ function step0(){
 					<div class="col-xs-12">
 						<p class="generator-desc">Devenez créateur de contenu original</p>
 					</div>
-					<div class="col-xs-12 words-container examples-container" style="height:500px" data-doexamples="1">
+					<div class="col-xs-12 words-container examples-container" style="height:450px" data-doexamples="1">
 						<div class="generator-main symbols">
 							<p>+</p>
 							<p>+</p>
@@ -199,9 +199,17 @@ jQuery(document).ready(function(){
 
 	//DECOR BEGIN
 	jQuery('.generator-step.word[data-custom-step="1"]').click(function(){
-		jQuery('.generator-step.word').not(this).css('display','none');
-		jQuery('.generator-main.symbols').css('display','none');
-		jQuery('.generator-backgrounds-list').css('display','block');
+		jQuery(this).toggleClass('isOpen');
+		if(jQuery(this).hasClass('isOpen')){
+			jQuery('.generator-step.word').not(this).css('display','none');
+			jQuery('.generator-main.symbols').css('display','none');
+			jQuery('.generator-backgrounds-list').css('display','block');
+		}
+		else{
+			jQuery('.generator-step.word').css('display','block');
+			jQuery('.generator-main.symbols').css('display','block');
+			jQuery('.generator-backgrounds-list').css('display','none');
+		}
 	});
 
 	jQuery('.generator-backgrounds-list p').click(function(){
@@ -223,9 +231,17 @@ jQuery(document).ready(function(){
 	
 	//GENRE BEGIN
 	jQuery('.generator-step.word[data-custom-step="2"]').click(function(){
-		jQuery('.generator-step.word').not(this).css('display','none');
-		jQuery('.generator-main.symbols').css('display','none');
-		jQuery('.generator-genres-list').css('display','block');
+		jQuery(this).toggleClass('isOpen');
+		if(jQuery(this).hasClass('isOpen')){
+			jQuery('.generator-step.word').not(this).css('display','none');
+			jQuery('.generator-main.symbols').css('display','none');
+			jQuery('.generator-genres-list').css('display','block');
+		}
+		else{
+			jQuery('.generator-step.word').css('display','block');
+			jQuery('.generator-main.symbols').css('display','block');
+			jQuery('.generator-genres-list').css('display','none');
+		}
 	});
 
 	jQuery('.generator-genres-list p').click(function(){
@@ -247,9 +263,17 @@ jQuery(document).ready(function(){
 	
 	//CHARACTERS BEGIN
 	jQuery('.generator-step.word[data-custom-step="3"]').click(function(){
-		jQuery('.generator-step.word').not(this).css('display','none');
-		jQuery('.generator-main.symbols').css('display','none');
-		jQuery('.generator-characters-list').css('display','block');
+		jQuery(this).toggleClass('isOpen');
+		if(jQuery(this).hasClass('isOpen')){
+			jQuery('.generator-step.word').not(this).css('display','none');
+			jQuery('.generator-main.symbols').css('display','none');
+			jQuery('.generator-characters-list').css('display','block');
+		}
+		else{
+			jQuery('.generator-step.word').css('display','block');
+			jQuery('.generator-main.symbols').css('display','block');
+			jQuery('.generator-characters-list').css('display','none');
+		}
 	});
 
 	jQuery('.generator-characters-list p').click(function(){
@@ -278,7 +302,7 @@ jQuery(document).ready(function(){
 		//jQuery('#customPoster #generator .custom-right').load('./game/finalPoster.php?background='+background+'&genre='+genre+'&character='+character+'&name='+name);
 		var url = './game/finalPoster.php?background='+background+'&genre='+genre+'&character='+character+'&name='+name
 		jQuery('#customPoster #generator .custom-right').html(
-			'<img style="max-width:100%; padding-top:150px;" src="'+url+'">'
+			'<img class="myGeneratedPoster" src="'+url+'">'
 		);
 	});
 	
