@@ -143,20 +143,20 @@
 			</div>
 		</div>
 		<div id="customPoster">
-			<div class="row">
-				<div class="col-xs-6 bgBlack no-padding-right">
+			<div class="row" style="max-width:100%">
+				<div class="col-xs-6 bgBlack no-padding-right padding-top padding-bottom">
 					<p class="text-right uppercase white big-text space-top">
 						Générateur original&nbsp;
 					</p>
 				</div>
-				<div class="col-xs-6 no-padding-left">
+				<div class="col-xs-6 no-padding-left padding-top padding-bottom">
 					<p class="uppercase black big-text space-top">
 						de contenus originaux
 					</p>
 				</div>
 			</div>
-			<div id="generator" class="row full-row">
-				<div class="col-sm-6 col-xs-12 custom-left row no-margin">
+			<div id="generator" class="row full-row space-top">
+				<div class="col-sm-6 col-xs-12 custom-left row no-margin no-padding-right no-padding-left">
 					<div class="left-indent">
 						<div class="col-xs-12">
 							<p class="generator-desc">Devenez créateur de contenu original</p>

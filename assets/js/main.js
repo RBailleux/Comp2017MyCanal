@@ -42,6 +42,7 @@ jQuery(document).ready(function(){
 	if(windowPosition >= (videoPosition - (videoHeight/2))){
 		var cvideo = document.getElementById("cvideo"); 
 		cvideo.play();
+		jQuery('#functionalities').css('max-height',jQuery('.video-background').outerHeight()+'px')
 	}
 	//START EXAMPLES
 	var customPosterPosition = jQuery("#customPoster").offset().top;
@@ -74,6 +75,7 @@ jQuery(document).ready(function(){
 	});
 });
 jQuery(window).scroll(function(){
+	jQuery('#functionalities').css('max-height',jQuery('.video-background').outerHeight()-1+'px')
 	var windowPosition = jQuery(window).scrollTop();
 	//START VIDEO
 	var videoPosition = jQuery(".video-background").offset().top;

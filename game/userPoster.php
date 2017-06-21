@@ -33,12 +33,12 @@ function main(){
 
 function step0(){
 ?>
-				<div class="col-sm-6 col-xs-12 custom-left row no-margin">
+				<div class="col-sm-6 col-xs-12 custom-left row no-margin no-padding-right no-padding-left">
 					<div class="left-indent">
 						<div class="col-xs-12">
 							<p class="generator-desc">Devenez créateur de contenu original</p>
 						</div>
-						<div class="col-xs-12 words-container examples-container" style="height:450px" data-doexamples="1">
+						<div class="col-xs-12 words-container examples-container" style="height:420px" data-doexamples="1">
 							<div class="generator-main symbols">
 								<p>+</p>
 								<p>+</p>
@@ -134,13 +134,13 @@ function step0(){
 								<button class="btn btn-primary btn-big">Générer</button>
 							</div>
 							<div class="generator-step generator-random center col-xs-2 no-padding-right">
-								<button class="btn btn-primary btn-big" style="width:100%"><span class="glyphicon glyphicon-random" aria-hidden="true"></span></button>
+								<button class="btn btn-primary btn-big"><span class="glyphicon glyphicon-random" aria-hidden="true"></span></button>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-6 col-xs-12 custom-right">
-
+					<img class="myGeneratedPoster" src="./assets/img/grey.png">
 				</div>
 <?php 
 

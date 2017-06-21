@@ -445,7 +445,7 @@ a:hover{
     width: 100%;
     min-height: 300px;
     height: auto;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 #customPoster .generator-step.word .diamond:not(.copyfrominput){
 	color:white;
