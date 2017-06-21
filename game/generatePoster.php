@@ -113,7 +113,7 @@
 		public $logoHigh = 74;
 		public $pngName;
 		
-		public function __construct($character = ' ', $background = ' ', $genre = ' ', $name = ' ')
+		public function __construct($character = ' ', $background = ' ', $genre = ' ', $name = 'Je profite d\'un mois gratuit')
 		{
 			$this->background = in_array($background, $this->backgroundList) ? $background : $this->backgroundList[array_rand($this->backgroundList, 1)];
 			$this->character = in_array($character, $this->characterList) ? $character : $this->characterList[array_rand($this->characterList, 1)];

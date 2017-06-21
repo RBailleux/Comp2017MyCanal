@@ -23,6 +23,7 @@ h1{
 	font-size:3em;
 	font-family:"CanalBoldRomain", sans-serif;
 	font-weight:bold;
+    line-height: 52px;
 }
 .btn-big{
 	padding:12px 25px;
@@ -113,6 +114,12 @@ a:hover{
 	padding-left:0;
 	padding-right:0;
 }
+.no-padding-right{
+	padding-right:0;
+}
+.no-padding-left{
+	padding-left:0;
+}
 .padding-top{
 	padding-top:30px;
 }
@@ -128,6 +135,15 @@ a:hover{
 }
 .no-margin-bottom{
 	margin-bottom:0;
+}
+.bgBlack{
+	background-color:black;
+}
+.big-text{
+    font-size: 3em;
+    font-family: "CanalBoldRomain", sans-serif;
+    font-weight: bold;
+    line-height: 52px;
 }
 /*PROGRAMS*/
 #logoMyCanal{
@@ -163,6 +179,7 @@ a:hover{
 }
 /*EXCLU*/
 #exclu{
+	margin:20px 0; 
 	position:relative;
 }
 #exclu-slider-container{
@@ -170,6 +187,7 @@ a:hover{
 	width:100%;	
 }
 .slider-title{
+	margin:9px 0 3px 0;
 	font-weight:600;
 	font-size:1.5em;
 	display:block;
@@ -252,6 +270,12 @@ a:hover{
 	height: 100%;
 	margin:0;
 }
+#generator{
+	min-height:550px;
+}
+#generator .left-indent{
+	padding-left:50px;
+}
 .custom-left{
 	flex-grow: 1;
     flex-shrink: 1;
@@ -297,6 +321,8 @@ a:hover{
 }
 #customPoster .generator-desc{
 	color:white;
+	font-size: 1.7em;
+    font-style: italic;
 }
 #customPoster .words, #customPoster .symbols{
 	color:white;
@@ -419,7 +445,7 @@ a:hover{
     width: 100%;
     min-height: 300px;
     height: auto;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 #customPoster .generator-step.word .diamond:not(.copyfrominput){
 	color:white;

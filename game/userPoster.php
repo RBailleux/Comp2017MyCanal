@@ -34,106 +34,108 @@ function main(){
 function step0(){
 ?>
 				<div class="col-sm-6 col-xs-12 custom-left row no-margin">
-					<div class="col-xs-12">
-						<p class="generator-desc">Devenez créateur de contenu original</p>
-					</div>
-					<div class="col-xs-12 words-container examples-container" style="height:450px" data-doexamples="1">
-						<div class="generator-main symbols">
-							<p>+</p>
-							<p>+</p>
-							<p>=</p>
+					<div class="left-indent">
+						<div class="col-xs-12">
+							<p class="generator-desc">Devenez créateur de contenu original</p>
 						</div>
-						<div class="generator-main words">
-							<div class="generator-step word" data-custom-step="1">
-								<span class="diamond">Sélectionnez un décor</span>
-								<div class="generator-backgrounds-list" style="display:none;">
-									<p data-background-name="aeroport">Aéroport</p>
-									<p data-background-name="avion">Avion</p>
-									<p data-background-name="casino">Casino</p>
-									<p data-background-name="chambre">Chambre</p>
-									<p data-background-name="chateau">Chateau</p>
-									<p data-background-name="ciel">Ciel</p>
-									<p data-background-name="cirque">Cirque</p>
-									<p data-background-name="club">Club</p>
-									<p data-background-name="desert">Désert</p>
-									<p data-background-name="ecole">École</p>
-									<p data-background-name="eglise">Église</p>
-									<p data-background-name="fete-foraine">Fête foraine</p>
-									<p data-background-name="foret">Forêt</p>
-									<p data-background-name="galaxie">Galaxie</p>
-									<p data-background-name="hopital">Hôpital</p>
-									<p data-background-name="jungle">Jungle</p>
-									<p data-background-name="mer">Mer</p>
-									<p data-background-name="montagne">Montagne</p>
-									<p data-background-name="sous-marin">Sous-marin</p>
-									<p data-background-name="tour-eiffel">Tour Eiffel</p>
+						<div class="col-xs-12 words-container examples-container" style="height:450px" data-doexamples="1">
+							<div class="generator-main symbols">
+								<p>+</p>
+								<p>+</p>
+								<p>=</p>
+							</div>
+							<div class="generator-main words">
+								<div class="generator-step word" data-custom-step="1">
+									<span class="diamond">Sélectionnez un décor</span>
+									<div class="generator-backgrounds-list" style="display:none;">
+										<p data-background-name="aeroport">Aéroport</p>
+										<p data-background-name="avion">Avion</p>
+										<p data-background-name="casino">Casino</p>
+										<p data-background-name="chambre">Chambre</p>
+										<p data-background-name="chateau">Chateau</p>
+										<p data-background-name="ciel">Ciel</p>
+										<p data-background-name="cirque">Cirque</p>
+										<p data-background-name="club">Club</p>
+										<p data-background-name="desert">Désert</p>
+										<p data-background-name="ecole">École</p>
+										<p data-background-name="eglise">Église</p>
+										<p data-background-name="fete-foraine">Fête foraine</p>
+										<p data-background-name="foret">Forêt</p>
+										<p data-background-name="galaxie">Galaxie</p>
+										<p data-background-name="hopital">Hôpital</p>
+										<p data-background-name="jungle">Jungle</p>
+										<p data-background-name="mer">Mer</p>
+										<p data-background-name="montagne">Montagne</p>
+										<p data-background-name="sous-marin">Sous-marin</p>
+										<p data-background-name="tour-eiffel">Tour Eiffel</p>
+									</div>
+								</div>
+								<div class="generator-step word" data-custom-step="2">
+									<span class="diamond">Sélectionnez un genre</span>
+									<div class="generator-genres-list" style="display:none;">
+										<p data-genre-name="action">Action</p>
+										<p data-genre-name="autobiographie">Autobiographie</p>
+										<p data-genre-name="cartoon">Cartoon</p>
+										<p data-genre-name="catastrophe">Catastrophe</p>
+										<p data-genre-name="comedie">Comédie</p>
+										<p data-genre-name="drame">Drame</p>
+										<p data-genre-name="erotique">Érotique</p>
+										<p data-genre-name="fantastique">Fantastique</p>
+										<p data-genre-name="film-auteur">Film d'auteur</p>
+										<p data-genre-name="historique">Historique</p>
+										<p data-genre-name="horreur">Horreur</p>
+										<p data-genre-name="medieval">Médiéval</p>
+										<p data-genre-name="romance">Romance</p>
+										<p data-genre-name="science-fiction">Science-fiction</p>
+										<p data-genre-name="thriller">Thriller</p>
+										<p data-genre-name="western">Western</p>
+									</div>
+								</div>
+								<div class="generator-step word" data-custom-step="3">
+									<span class="diamond">Sélectionnez un personnage</span>
+									<div class="generator-characters-list" style="display:none;">
+										<p data-character-name="animaux">Animaux</p>
+										<p data-character-name="businessman">Homme d'affaire</p>
+										<p data-character-name="catcheur">Catcheur</p>
+										<p data-character-name="couple">Couple</p>
+										<p data-character-name="creature">Créature</p>
+										<p data-character-name="danseuse">Danseuse / danseur</p>
+										<p data-character-name="enfant">Enfant</p>
+										<p data-character-name="facteur">Facteur</p>
+										<p data-character-name="fashionista">Fashionista</p>
+										<p data-character-name="femme">Femme</p>
+										<p data-character-name="gangster">Gangster</p>
+										<p data-character-name="geek">Geek</p>
+										<p data-character-name="hacker">Hacker</p>
+										<p data-character-name="magicien">Magicien</p>
+										<p data-character-name="medecin">Médecin</p>
+										<p data-character-name="militaire">Militaire</p>
+										<p data-character-name="policier">Policier</p>
+										<p data-character-name="pompier">Pompier</p>
+										<p data-character-name="pompom-girl">Pompom girl</p>
+										<p data-character-name="robot">Robot</p>
+										<p data-character-name="rockeur">Rockeur</p>
+										<p data-character-name="roi">Roi</p>
+										<p data-character-name="rugbyman">Rugbyman</p>
+										<p data-character-name="sauvage">Sauvage</p>
+										<p data-character-name="sportif">Sportif</p>
+										<p data-character-name="sumo">Sumo</p>
+										<p data-character-name="viking">Viking</p>
+									</div>
+								</div>
+								<div class="generator-step word generator-input" data-custom-step="4">
+									<input type="text" placeholder="Tapez le nom de votre série" maxlength="30">
+									<span class="diamond copyfrominput">TAPEZ LE NOM DE VOTRE SÉRIE</span>
 								</div>
 							</div>
-							<div class="generator-step word" data-custom-step="2">
-								<span class="diamond">Sélectionnez un genre</span>
-								<div class="generator-genres-list" style="display:none;">
-									<p data-genre-name="action">Action</p>
-									<p data-genre-name="autobiographie">Autobiographie</p>
-									<p data-genre-name="cartoon">Cartoon</p>
-									<p data-genre-name="catastrophe">Catastrophe</p>
-									<p data-genre-name="comedie">Comédie</p>
-									<p data-genre-name="drame">Drame</p>
-									<p data-genre-name="erotique">Érotique</p>
-									<p data-genre-name="fantastique">Fantastique</p>
-									<p data-genre-name="film-auteur">Film d'auteur</p>
-									<p data-genre-name="historique">Historique</p>
-									<p data-genre-name="horreur">Horreur</p>
-									<p data-genre-name="medieval">Médiéval</p>
-									<p data-genre-name="romance">Romance</p>
-									<p data-genre-name="science-fiction">Science-fiction</p>
-									<p data-genre-name="thriller">Thriller</p>
-									<p data-genre-name="western">Western</p>
-								</div>
-							</div>
-							<div class="generator-step word" data-custom-step="3">
-								<span class="diamond">Sélectionnez un personnage</span>
-								<div class="generator-characters-list" style="display:none;">
-									<p data-character-name="animaux">Animaux</p>
-									<p data-character-name="businessman">Homme d'affaire</p>
-									<p data-character-name="catcheur">Catcheur</p>
-									<p data-character-name="couple">Couple</p>
-									<p data-character-name="creature">Créature</p>
-									<p data-character-name="danseuse">Danseuse / danseur</p>
-									<p data-character-name="enfant">Enfant</p>
-									<p data-character-name="facteur">Facteur</p>
-									<p data-character-name="fashionista">Fashionista</p>
-									<p data-character-name="femme">Femme</p>
-									<p data-character-name="gangster">Gangster</p>
-									<p data-character-name="geek">Geek</p>
-									<p data-character-name="hacker">Hacker</p>
-									<p data-character-name="magicien">Magicien</p>
-									<p data-character-name="medecin">Médecin</p>
-									<p data-character-name="militaire">Militaire</p>
-									<p data-character-name="policier">Policier</p>
-									<p data-character-name="pompier">Pompier</p>
-									<p data-character-name="pompom-girl">Pompom girl</p>
-									<p data-character-name="robot">Robot</p>
-									<p data-character-name="rockeur">Rockeur</p>
-									<p data-character-name="roi">Roi</p>
-									<p data-character-name="rugbyman">Rugbyman</p>
-									<p data-character-name="sauvage">Sauvage</p>
-									<p data-character-name="sportif">Sportif</p>
-									<p data-character-name="sumo">Sumo</p>
-									<p data-character-name="viking">Viking</p>
-								</div>
-							</div>
-							<div class="generator-step word generator-input" data-custom-step="4">
-								<input type="text" placeholder="Tapez le nom de votre série" maxlength="30">
-								<span class="diamond copyfrominput">TAPEZ LE NOM DE VOTRE SÉRIE</span>
-							</div>
 						</div>
-					</div>
-					<div class="col-xs-12 row">
-						<div class="generator-step generator-submit center col-xs-10">
-							<button class="btn btn-primary btn-big">Générer</button>
-						</div>
-						<div class="generator-step generator-random center col-xs-2">
-							<button class="btn btn-primary btn-big"><span class="glyphicon glyphicon-random" aria-hidden="true"></span></button>
+						<div class="col-xs-12 row no-padding-right">
+							<div class="generator-step generator-submit center col-xs-10">
+								<button class="btn btn-primary btn-big">Générer</button>
+							</div>
+							<div class="generator-step generator-random center col-xs-2 no-padding-right">
+								<button class="btn btn-primary btn-big" style="width:100%"><span class="glyphicon glyphicon-random" aria-hidden="true"></span></button>
+							</div>
 						</div>
 					</div>
 				</div>

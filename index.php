@@ -47,7 +47,7 @@
 			</div>
 		</div>
 		<div id="exclu">
-			<div class="container container-fill">
+			<div class="container container-fill space-bottom">
 				<div class="row">
 					<div class="col-sm-12 center no-padding">
 						<h1 class="uppercase black space-top space-bottom">Profitez des exclusivités MyCanal</h1>
@@ -62,7 +62,7 @@
 							<span class="slider-title">
 								Macédoine / Espagne
 							</span>
-							Coupe du monde 2018 -<br>
+							Coupe du monde 2018 -
 							Qualifications. Groupe G
 						</p>
 					</div>
@@ -123,7 +123,7 @@
 			</div>
 		</div>
 		<div id="functionalities">
-			<div class="container funct-title">
+			<div class="container space-top funct-title">
 				<div class="row">
 					<div class="col-sm-12">
 						<h1 class="uppercase center space-top no-padding">Découvrez nos fonctionnalités</h1>
@@ -143,35 +143,48 @@
 			</div>
 		</div>
 		<div id="customPoster">
-			<div><h1 class="uppercase center no-margin-top no-margin-bottom padding-top padding-bottom no-padding bicolor">Générateur original de contenus originaux</h1></div>
-			<div id="generator" class="row full-row centerOnTop">
+			<div class="row">
+				<div class="col-xs-6 bgBlack no-padding-right">
+					<p class="text-right uppercase white big-text space-top">
+						Générateur original&nbsp;
+					</p>
+				</div>
+				<div class="col-xs-6 no-padding-left">
+					<p class="uppercase black big-text space-top">
+						de contenus originaux
+					</p>
+				</div>
+			</div>
+			<div id="generator" class="row full-row">
 				<div class="col-sm-6 col-xs-12 custom-left row no-margin">
-					<div class="col-xs-12">
-						<p class="generator-desc">Devenez créateur de contenu original</p>
-					</div>
-					<div class="col-xs-12 words-container examples-container" data-doexamples="1">
-						<div class="examples-main symbols">
-							<p>+</p>
-							<p>+</p>
-							<p>=</p>
+					<div class="left-indent">
+						<div class="col-xs-12">
+							<p class="generator-desc">Devenez créateur de contenu original</p>
 						</div>
-						<div class="examples-main words" data-serie="guyane">
-							<p class="examples-step word" data-step="1"><span class="diamond">Jungle</span></p>
-							<p class="examples-step word" data-step="2"><span class="diamond">Traffic</span></p>
-							<p class="examples-step word" data-step="3"><span class="diamond">Stagiaire</span></p>
-							<p class="examples-step word" data-step="4"><span class="diamond">Guyane</span></p>
-						</div>
-						<div class="examples-main words" data-serie="borgia">
-							<p class="examples-step word" data-step="1"><span class="diamond">Vatican</span></p>
-							<p class="examples-step word" data-step="2"><span class="diamond">Médiéval</span></p>
-							<p class="examples-step word" data-step="3"><span class="diamond">Famille</span></p>
-							<p class="examples-step word" data-step="4"><span class="diamond">Borgia</span></p>
-						</div>
-						<div class="examples-main words" data-serie="revenants">
-							<p class="examples-step word" data-step="1"><span class="diamond">Montagne</span></p>
-							<p class="examples-step word" data-step="2"><span class="diamond">Mystère</span></p>
-							<p class="examples-step word" data-step="3"><span class="diamond">Fantome</span></p>
-							<p class="examples-step word" data-step="4"><span class="diamond">Les Revenants</span></p>
+						<div class="col-xs-12 words-container examples-container" data-doexamples="1">
+							<div class="examples-main symbols">
+								<p>+</p>
+								<p>+</p>
+								<p>=</p>
+							</div>
+							<div class="examples-main words" data-serie="guyane">
+								<p class="examples-step word" data-step="1"><span class="diamond">Jungle</span></p>
+								<p class="examples-step word" data-step="2"><span class="diamond">Traffic</span></p>
+								<p class="examples-step word" data-step="3"><span class="diamond">Stagiaire</span></p>
+								<p class="examples-step word" data-step="4"><span class="diamond">Guyane</span></p>
+							</div>
+							<div class="examples-main words" data-serie="borgia">
+								<p class="examples-step word" data-step="1"><span class="diamond">Vatican</span></p>
+								<p class="examples-step word" data-step="2"><span class="diamond">Médiéval</span></p>
+								<p class="examples-step word" data-step="3"><span class="diamond">Famille</span></p>
+								<p class="examples-step word" data-step="4"><span class="diamond">Borgia</span></p>
+							</div>
+							<div class="examples-main words" data-serie="revenants">
+								<p class="examples-step word" data-step="1"><span class="diamond">Montagne</span></p>
+								<p class="examples-step word" data-step="2"><span class="diamond">Mystère</span></p>
+								<p class="examples-step word" data-step="3"><span class="diamond">Fantome</span></p>
+								<p class="examples-step word" data-step="4"><span class="diamond">Les Revenants</span></p>
+							</div>
 						</div>
 					</div>
 				</div>
