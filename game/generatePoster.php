@@ -32,7 +32,7 @@
 				'enfant',
 				'facteur',
 				'fashionista',
-				'fille',
+				'femme',
 				'gangster',
 				'geek',
 				'hacker',

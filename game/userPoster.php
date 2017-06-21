@@ -102,7 +102,7 @@ function step0(){
 									<p data-character-name="enfant">Enfant</p>
 									<p data-character-name="facteur">Facteur</p>
 									<p data-character-name="fashionista">Fashionista</p>
-									<p data-character-name="fille">Fille</p>
+									<p data-character-name="femme">Femme</p>
 									<p data-character-name="gangster">Gangster</p>
 									<p data-character-name="geek">Geek</p>
 									<p data-character-name="hacker">Hacker</p>
@@ -297,24 +297,32 @@ jQuery(document).ready(function(){
 	//CHARACTERS END
 	
 	//DO THE MAGICAL STUFF
-	jQuery('.generator-submit button').click(function(){
-		var background = jQuery('.generator-step.word[data-custom-step="1"] span').attr('data-selected-background');
-		var genre = jQuery('.generator-step.word[data-custom-step="2"] span').attr('data-selected-genre');
-		var character = jQuery('.generator-step.word[data-custom-step="3"] span').attr('data-selected-character');
-		var name = encodeURI(jQuery('.generator-input input').val());
-		//jQuery('#customPoster #generator .custom-right').load('./game/finalPoster.php?background='+background+'&genre='+genre+'&character='+character+'&name='+name);
-		var url = './game/finalPoster.php?background='+background+'&genre='+genre+'&character='+character+'&name='+name+'&nocache='+Date.now()
-		jQuery('#customPoster #generator .custom-right').html(
-			'<img class="myGeneratedPoster" src="'+url+'">'
-		);
+	jQuery('.generator-input input').keypress(function(e) {
+	    if(e.which == 13) {
+	    	createImage();
+	    }
 	});
+	jQuery('.generator-submit button').click(function(){
+		createImage();
+	});
+	
 	jQuery('.generator-random button').click(function(){
 		var url = './game/finalPoster.php?&nocache='+Date.now()
 		jQuery('#customPoster #generator .custom-right').html(
 			'<img class="myGeneratedPoster" src="'+url+'">'
 		);
 	});
-	
+
+	function createImage(){
+		var background = jQuery('.generator-step.word[data-custom-step="1"] span').attr('data-selected-background');
+		var genre = jQuery('.generator-step.word[data-custom-step="2"] span').attr('data-selected-genre');
+		var character = jQuery('.generator-step.word[data-custom-step="3"] span').attr('data-selected-character');
+		var name = encodeURI(jQuery('.generator-input input').val());
+		var url = './game/finalPoster.php?background='+background+'&genre='+genre+'&character='+character+'&name='+name+'&nocache='+Date.now()
+		jQuery('#customPoster #generator .custom-right').html(
+			'<img class="myGeneratedPoster" src="'+url+'">'
+		);
+	}
 	
 // 	jQuery('button.nextStep').click(function(event){
 // 		event.preventDefault();
