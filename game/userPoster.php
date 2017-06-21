@@ -128,9 +128,12 @@ function step0(){
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-12">
-						<div class="generator-step generator-submit center">
+					<div class="col-xs-12 row">
+						<div class="generator-step generator-submit center col-xs-10">
 							<button class="btn btn-primary btn-big">Générer</button>
+						</div>
+						<div class="generator-step generator-random center col-xs-2">
+							<button class="btn btn-primary btn-big"><span class="glyphicon glyphicon-random" aria-hidden="true"></span></button>
 						</div>
 					</div>
 				</div>
@@ -300,7 +303,13 @@ jQuery(document).ready(function(){
 		var character = jQuery('.generator-step.word[data-custom-step="3"] span').attr('data-selected-character');
 		var name = encodeURI(jQuery('.generator-input input').val());
 		//jQuery('#customPoster #generator .custom-right').load('./game/finalPoster.php?background='+background+'&genre='+genre+'&character='+character+'&name='+name);
-		var url = './game/finalPoster.php?background='+background+'&genre='+genre+'&character='+character+'&name='+name
+		var url = './game/finalPoster.php?background='+background+'&genre='+genre+'&character='+character+'&name='+name+'&nocache='+Date.now()
+		jQuery('#customPoster #generator .custom-right').html(
+			'<img class="myGeneratedPoster" src="'+url+'">'
+		);
+	});
+	jQuery('.generator-random button').click(function(){
+		var url = './game/finalPoster.php?&nocache='+Date.now()
 		jQuery('#customPoster #generator .custom-right').html(
 			'<img class="myGeneratedPoster" src="'+url+'">'
 		);
