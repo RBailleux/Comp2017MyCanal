@@ -187,9 +187,9 @@ jQuery(document).ready(function(){
 	var topHeight = jQuery('#customPoster h1').outerHeight()+'px';
 	jQuery('#customPoster .custom-left').css('padding-top', topHeight);
 
-	jQuery('#customPoster .diamond').each(function(){
-		jQuery(this).css('width',jQuery(this).outerWidth()+30+'px')
-	})
+// 	jQuery('#customPoster .diamond').each(function(){
+// 		jQuery(this).css('width',jQuery(this).outerWidth()+30+'px')
+// 	})
 // 	jQuery('.generator-step.word').click(function(event){
 // 		console.log(jQuery(this).data('custom-step'));
 // 	});

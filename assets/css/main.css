@@ -353,6 +353,7 @@ a:hover{
     display:inline-block;
     height: 2.5em;
     line-height: 2.5em;
+    padding-right: 30px;
 }
 #customPoster .generator-step.word{
 	cursor:pointer;
@@ -386,7 +387,7 @@ a:hover{
 	position:absolute;
 	width:auto!important;
 	min-width:2.5em;
-	left:30px;
+/* 	left:30px; */
 	height:2.5em;
 	z-index:0;
 }

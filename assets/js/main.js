@@ -62,11 +62,7 @@ jQuery(document).ready(function(){
 	jQuery('#customPoster .custom-left').css('padding-top', topHeight);
 	jQuery('#customPoster .examples-main img').each(function(){
 		jQuery(this).hide();
-	});
-	jQuery('#customPoster .diamond').each(function(){
-		var _this = this;
-		jQuery(_this).css('width',jQuery(_this).outerWidth()+50+'px')
-	})
+	});	
 	
 	jQuery('.start-generator').click(function(e){
 		jQuery('.examples-container').data('doexamples', '0');
@@ -141,31 +137,33 @@ function fadeInExamples(){
 	jQuery('[data-serie="guyane"] .word[data-step="1"]').fadeIn(durationAnimation, function(){ //1500
 		jQuery('[data-serie="guyane"] .word[data-step="2"]').fadeIn(durationAnimation/2, function(){ //750
 			jQuery('[data-serie="guyane"] .word[data-step="3"]').fadeIn(durationAnimation/2, function(){ //750
-				jQuery('[data-serie="guyane"] .word[data-step="4"]').fadeIn(durationAnimation); //1500
-				setTimeout(function(){	//3500
-					jQuery('[data-serie="guyane"] .word').each(function(){
-						jQuery(this).hide();
-					});
-					jQuery('[data-serie="borgia"] .word[data-step="1"]').fadeIn(durationAnimation, function(){
-						jQuery('[data-serie="borgia"] .word[data-step="2"]').fadeIn(durationAnimation/2, function(){
-							jQuery('[data-serie="borgia"] .word[data-step="3"]').fadeIn(durationAnimation/2, function(){
-								jQuery('[data-serie="borgia"] .word[data-step="4"]').fadeIn(durationAnimation);
-								setTimeout(function(){
-									jQuery('[data-serie="borgia"] .word').each(function(){
-										jQuery(this).hide();
+				jQuery('[data-serie="guyane"] .word[data-step="4"]').fadeIn(durationAnimation, function(){
+					setTimeout(function(){	//3500
+						jQuery('[data-serie="guyane"] .word').each(function(){
+							jQuery(this).hide();
+						});
+						jQuery('[data-serie="borgia"] .word[data-step="1"]').fadeIn(durationAnimation, function(){
+							jQuery('[data-serie="borgia"] .word[data-step="2"]').fadeIn(durationAnimation/2, function(){
+								jQuery('[data-serie="borgia"] .word[data-step="3"]').fadeIn(durationAnimation/2, function(){
+									jQuery('[data-serie="borgia"] .word[data-step="4"]').fadeIn(durationAnimation, function(){
+										setTimeout(function(){
+											jQuery('[data-serie="borgia"] .word').each(function(){
+												jQuery(this).hide();
+											});
+											jQuery('[data-serie="revenants"] .word[data-step="1"]').fadeIn(durationAnimation, function(){
+												jQuery('[data-serie="revenants"] .word[data-step="2"]').fadeIn(durationAnimation/2, function(){
+													jQuery('[data-serie="revenants"] .word[data-step="3"]').fadeIn(durationAnimation/2, function(){
+														jQuery('[data-serie="revenants"] .word[data-step="4"]').fadeIn(durationAnimation);
+													})
+												})
+											});
+										},durationAnimation+2000)
 									});
-									jQuery('[data-serie="revenants"] .word[data-step="1"]').fadeIn(durationAnimation, function(){
-										jQuery('[data-serie="revenants"] .word[data-step="2"]').fadeIn(durationAnimation/2, function(){
-											jQuery('[data-serie="revenants"] .word[data-step="3"]').fadeIn(durationAnimation/2, function(){
-												jQuery('[data-serie="revenants"] .word[data-step="4"]').fadeIn(durationAnimation);
-											})
-										})
-									});
-								},durationAnimation*2+2000)
+								})
 							})
-						})
-					});
-				},durationAnimation*2+2000)
+						});
+					},durationAnimation+2000)
+				}); //1500
 			})
 		})
 	});
