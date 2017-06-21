@@ -145,6 +145,12 @@ a:hover{
     font-weight: bold;
     line-height: 52px;
 }
+.large-text{
+    font-size: 2.5em;
+    font-family: "CanalBoldRomain", sans-serif;
+    font-weight: bold;
+    line-height: 52px;
+}
 /*PROGRAMS*/
 #logoMyCanal{
 	text-align:center;
@@ -449,7 +455,7 @@ a:hover{
     transition: color 0.3s;
 }
 #customPoster .generator-step.word .diamond:not(.copyfrominput):hover{
-	color:#C0C0C0;
+	color:#929090;
 }
 #customPoster .generator-step.word input::placeholder{
 	text-transform:uppercase;
@@ -458,7 +464,7 @@ a:hover{
     transition: color 0.3s;
 }
 #customPoster .generator-step.word input:hover::placeholder{
-	color:#C0C0C0;
+	color:#929090;
 }
 #customPoster .generator-step.word.isOpen .diamond:after {
     content: "x";
@@ -474,7 +480,7 @@ a:hover{
     top: 25px;
     width: calc(100% - 30px);
     height: 413px;
-    background-color:rgba(0,0,0,0.7);
+    background-color:rgba(0,0,0,0.9);
 }
 
 /*PRICING*/

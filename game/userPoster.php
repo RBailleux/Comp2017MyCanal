@@ -314,13 +314,14 @@ jQuery(document).ready(function(){
 			'<span id="img-container">'+
 				'<img id="finalUserPoster" class="myGeneratedPoster" src="'+url+'">'+
 				'<div class="shareItBlock">'+
-					'<p class="center white big-text" style="padding-top:50px">Maintenant, découvrez le contenu créé par Canal directement sur MyCanal</p>'+
+					'<p class="center white large-text" style="padding-top:50px">Maintenant, découvrez le contenu créé par Canal directement sur MyCanal</p>'+
 					'<p class="center"><button class="btn btn-primary">Profitez d\'un mois gratuit</button></p>'+
 				'</div>'+
 			'</span>'+
 			'<ul id="finalUserShare" class="social-network social-circle center" style="display:none; margin:0 auto;">'+
 	            '<li><a href="#" class="icoFacebook" title="Facebook"><i class="socicon socicon-facebook"></i></a></li>'+
 	            '<li><a href="#" class="icoTwitter" title="Twitter"><i class="socicon socicon-twitter"></i></a></li>'+
+	            '<li><a href="#" class="icoYoutube" title="Email"><i class="socicon socicon-mail"></i></a></li>'+
 	        '</ul>'+
 			'</div>'
 		);
