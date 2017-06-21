@@ -311,8 +311,26 @@ jQuery(document).ready(function(){
 	jQuery('.generator-random button').click(function(){
 		var url = './game/finalPoster.php?&nocache='+Date.now()
 		jQuery('#customPoster #generator .custom-right').html(
-			'<img class="myGeneratedPoster" src="'+url+'">'
+			'<span id="img-container">'+
+				'<img id="finalUserPoster" class="myGeneratedPoster" src="'+url+'">'+
+				'<div class="shareItBlock">'+
+					'<p class="center white big-text" style="padding-top:50px">Maintenant, découvrez le contenu créé par Canal directement sur MyCanal</p>'+
+					'<p class="center"><button class="btn btn-primary">Profitez d\'un mois gratuit</button></p>'+
+				'</div>'+
+			'</span>'+
+			'<ul id="finalUserShare" class="social-network social-circle center" style="display:none; margin:0 auto;">'+
+	            '<li><a href="#" class="icoFacebook" title="Facebook"><i class="socicon socicon-facebook"></i></a></li>'+
+	            '<li><a href="#" class="icoTwitter" title="Twitter"><i class="socicon socicon-twitter"></i></a></li>'+
+	        '</ul>'+
+			'</div>'
 		);
+		
+		var affiche = document.getElementById('finalUserPoster');
+		affiche.onload = function () {
+			jQuery('#img-container').addClass('shareIt');  
+			jQuery('#finalUserShare').css('display','block');
+	    };
+		
 	});
 
 	function createImage(){

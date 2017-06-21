@@ -367,10 +367,6 @@ a:hover{
 #customPoster .generator-step.word input:focus{
 	outline:none;
 }
-#customPoster .generator-step.word input::placeholder{
-	text-transform:uppercase;
-	color:white;
-}
 
 #customPoster .generator-input{
 	position:relative;
@@ -387,7 +383,6 @@ a:hover{
 	position:absolute;
 	width:auto!important;
 	min-width:2.5em;
-/* 	left:30px; */
 	height:2.5em;
 	z-index:0;
 }
@@ -450,11 +445,36 @@ a:hover{
 }
 #customPoster .generator-step.word .diamond:not(.copyfrominput){
 	color:white;
+	-webkit-transition: color 0.3s; /* Safari */
+    transition: color 0.3s;
+}
+#customPoster .generator-step.word .diamond:not(.copyfrominput):hover{
+	color:#C0C0C0;
+}
+#customPoster .generator-step.word input::placeholder{
+	text-transform:uppercase;
+	color:white;
+	-webkit-transition: color 0.3s; /* Safari */
+    transition: color 0.3s;
+}
+#customPoster .generator-step.word input:hover::placeholder{
+	color:#C0C0C0;
 }
 #customPoster .generator-step.word.isOpen .diamond:after {
     content: "x";
     position: absolute;
     right: 10px;
+}
+.shareItBlock{
+	display:none;
+}
+#customPoster #img-container.shareIt:hover .shareItBlock{
+	display: block;
+    position: absolute;
+    top: 25px;
+    width: calc(100% - 30px);
+    height: 413px;
+    background-color:rgba(0,0,0,0.7);
 }
 
 /*PRICING*/

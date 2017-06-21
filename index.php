@@ -169,7 +169,7 @@
 							</div>
 							<div class="examples-main words" data-serie="guyane">
 								<p class="examples-step word" data-step="1"><span class="diamond">Jungle</span></p>
-								<p class="examples-step word" data-step="2"><span class="diamond">Traffic</span></p>
+								<p class="examples-step word" data-step="2"><span class="diamond">Trafic</span></p>
 								<p class="examples-step word" data-step="3"><span class="diamond">Stagiaire</span></p>
 								<p class="examples-step word" data-step="4"><span class="diamond">Guyane</span></p>
 							</div>
