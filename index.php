@@ -72,7 +72,7 @@
 							<span class="slider-title">
 								Twin peaks : The Return
 							</span>
-							Série suspens
+							Série suspense
 						</p>
 					</div>
 					<div class="center">
@@ -90,7 +90,7 @@
 							<span class="slider-title">
 								Homeland
 							</span>
-							Série suspens
+							Série suspense
 						</p>
 					</div>
 					<div class="center">
@@ -108,7 +108,7 @@
 							<span class="slider-title">
 								Insaisissables 2
 							</span>
-							Film suspens
+							Film suspense
 						</p>
 					</div>
 				</div>
