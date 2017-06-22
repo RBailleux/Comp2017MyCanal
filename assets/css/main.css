@@ -146,10 +146,10 @@ a:hover{
     line-height: 52px;
 }
 .large-text{
-    font-size: 2.5em;
+	font-size: 1.5em;
     font-family: "CanalBoldRomain", sans-serif;
     font-weight: bold;
-    line-height: 52px;
+    line-height: 1.5em;
 }
 /*PROGRAMS*/
 #logoMyCanal{
@@ -350,6 +350,13 @@ a:hover{
 }
 #customPoster .word{
 	padding-top:1em;
+}
+
+#generator .symbols p:nth-child(1){
+	padding-top:3.2em;
+}
+#generator .symbols p:nth-child(2){
+	padding-top:1.7em;
 }
 #customPoster .word .diamond{
     background-image: url(../img/diamond.png);

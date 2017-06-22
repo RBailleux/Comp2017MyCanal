@@ -314,7 +314,7 @@ jQuery(document).ready(function(){
 			'<span id="img-container">'+
 				'<img id="finalUserPoster" class="myGeneratedPoster" src="'+url+'">'+
 				'<div class="shareItBlock">'+
-					'<p class="center white large-text" style="padding-top:50px">Maintenant, découvrez le contenu créé par Canal directement sur MyCanal</p>'+
+					'<p class="center white large-text space-top" style="padding-top:50px">Maintenant, découvrez le contenu créé<br> par Canal directement sur MyCanal</p>'+
 					'<p class="center"><button class="btn btn-primary">Profitez d\'un mois gratuit</button></p>'+
 				'</div>'+
 			'</span>'+
@@ -344,7 +344,7 @@ jQuery(document).ready(function(){
 			'<span id="img-container">'+
 				'<img id="finalUserPoster" class="myGeneratedPoster" src="'+url+'">'+
 				'<div class="shareItBlock">'+
-					'<p class="center white large-text" style="padding-top:50px">Maintenant, découvrez le contenu créé par Canal directement sur MyCanal</p>'+
+					'<p class="center white large-text space-top space-bottom" style="padding-top:50px">Maintenant, découvrez le contenu créé<br> par Canal directement sur MyCanal</p>'+
 					'<p class="center"><button class="btn btn-primary">Profitez d\'un mois gratuit</button></p>'+
 				'</div>'+
 			'</span>'+
