@@ -71,37 +71,183 @@
 				'western'
 		);
 		public $descriptionList = array(
-				'Des fois tu gagnes, des fois tu apprends',
-				'Les anges viennent du ciel, mais moi je t\'ai trouvé sur terre',
-				'Dur d\'avancer à deux quand l\'un bloque sur le passé',
-				'Seul on va plus vite, à deux on va plus loin ',
-				'Un jour, quelqu\'un',
-				'Riches de nos misères',
-				'Il y a toujours plus fort que nous',
-				'Ils n\'en reviendront pas vivants',
-				'The Floor is Lava',
-				'Nous ne sommes pas seuls',
-				'Et si c\'était vous ?',
-				'C\'est leur choix de vies',
-				'Désolé d\'être parti si tôt',
-				'La comédie de l’année',
-				'Serré sous la couette',
-				'Deux boules de glace plus tard',
-				'L\'hiver arrive, ils auront besoin de leurs bonnets',
-				'L\'amour avec un grand H',
-				'Ici pour souffrir',
-				'Sa survie est dans ses mains',
-				'Deux pour le prix d’une',
-				'Quand les choses vont dans une mauvaise direction,<br>ne les accompagnez pas',
-				'Le rêve et la réalité font partie de la vie,<br>il faut seulement savoir les distinguer',
-				'Ils arrivent trottinant, il leur manque deux pieds',
-				'J\'ai fait des crêpes avant de mourir',
-				'Vous ne le verrez plus jamais de la même façon',
-				'Le plus gentil des oursons',
-				'À la recherche de la baguette magique',
-				'La contre-attaque saisonnière',
-				'Un étalon flamboyant qui tire plus vite que son ombre',
-				'Tu m\'enlève ça de la bouche'
+				'action' => array(
+						'Dur d\'avancer à deux quand l\'un bloque sur le passé',
+						'Seul on va plus vite, à deux on va plus loin ',
+						'Il y a toujours plus fort que nous',
+						'Serré sous la couette',
+						'L\'hiver arrive, ils auront besoin de leurs bonnets',
+						'Sa survie est dans ses mains',
+						'Deux pour le prix d’une'
+				),
+				'autobiographie' => array(
+						'Des fois tu gagnes, des fois tu apprends',
+						'Riches de nos misères',
+						'Et si c\'était vous ?',
+						'Tu m\'enlève ça de la bouche'
+				),
+				'cartoon' => array(
+						'Le plus gentil des oursons',
+						'Deux boules de glace plus tard',
+						'La contre-attaque saisonnière'
+				),
+				'catastrophe' => array(
+						'Nous ne sommes pas seuls',
+						'Ici pour souffrir',
+						'Sa survie est dans ses mains'
+				),
+				'comedie' => array(
+						'Un jour, quelqu\'un',
+						'The Floor is Lava',
+						'Et si c\'était vous ?',
+						'La comédie de l’année',
+						'Serré sous la couette',
+						'Deux boules de glace plus tard',
+						'L\'amour avec un grand H',
+						'Ici pour souffrir',
+						'J\'ai fait des crêpes avant de mourir',
+						'Vous ne le verrez plus jamais de la même façon',
+						'Le plus gentil des oursons',
+						'À la recherche de la baguette magique'
+				),
+				'drame' => array(
+						'Riches de nos misères',
+						'C\'est leur choix de vies',
+						'Désolé d\'être parti si tôt',
+						'L\'amour avec un grand H',
+						'Ici pour souffrir',
+						'Sa survie est dans ses mains',
+						'Quand les choses vont dans une mauvaise direction,<br>ne les accompagnez pas',
+						'Ils arrivent trottinant, il leur manque deux pieds',
+						'J\'ai fait des crêpes avant de mourir',
+						'La contre-attaque saisonnière',
+						'Tu m\'enlève ça de la bouche'
+				),
+				'erotique' => array(
+						'Seul on va plus vite, à deux on va plus loin ',
+						'Il y a toujours plus fort que nous',
+						'Ils n\'en reviendront pas vivants',
+						'Serré sous la couette',
+						'Deux boules de glace plus tard',
+						'Deux pour le prix d’une',
+						'À la recherche de la baguette magique',
+						'La contre-attaque saisonnière',
+						'Un étalon flamboyant qui tire plus vite que son ombre',
+						'Tu m\'enlève ça de la bouche'
+				),
+				'fantastique' => array(
+						'Seul on va plus vite, à deux on va plus loin ',
+						'Un jour, quelqu\'un',
+						'Ils n\'en reviendront pas vivants',
+						'C\'est leur choix de vies',
+						'Quand les choses vont dans une mauvaise direction,<br>ne les accompagnez pas',
+						'Le rêve et la réalité font partie de la vie,<br>il faut seulement savoir les distinguer',
+						'À la recherche de la baguette magique',
+						'La contre-attaque saisonnière',
+						'Un étalon flamboyant qui tire plus vite que son ombre'
+				),
+				'film-auteur' => array(
+						'Les anges viennent du ciel, mais moi je t\'ai trouvé sur terre',
+						'Dur d\'avancer à deux quand l\'un bloque sur le passé',
+						'Et si c\'était vous ?',
+						'Quand les choses vont dans une mauvaise direction,<br>ne les accompagnez pas',
+						'Le rêve et la réalité font partie de la vie,<br>il faut seulement savoir les distinguer',
+						'Vous ne le verrez plus jamais de la même façon',
+						'Tu m\'enlève ça de la bouche'
+				),
+				'historique' => array(
+						'Riches de nos misères',
+						'Sa survie est dans ses mains',
+						'Ici pour souffrir'
+				),
+				'horreur' => array(
+						'Nous ne sommes pas seuls',
+						'Sa survie est dans ses mains',
+						'Ils arrivent trottinant, il leur manque deux pieds',
+						'J\'ai fait des crêpes avant de mourir',
+						'Le plus gentil des oursons'
+				),
+				'medieval' => array(
+						'Ils n\'en reviendront pas vivants',
+						'Nous ne sommes pas seuls',
+						'Ici pour souffrir'
+				),
+				'romance' => array(
+						'Les anges viennent du ciel, mais moi je t\'ai trouvé sur terre',
+						'Dur d\'avancer à deux quand l\'un bloque sur le passé',
+						'Seul on va plus vite, à deux on va plus loin ',
+						'Il y a toujours plus fort que nous',
+						'C\'est leur choix de vies',
+						'Désolé d\'être parti si tôt',
+						'La comédie de l’année',
+						'L\'amour avec un grand H',
+						'Ici pour souffrir',
+						'Tu m\'enlève ça de la bouche'
+				),
+				'science-fiction' => array(
+						'Ils n\'en reviendront pas vivants',
+						'The Floor is Lava',
+						'Nous ne sommes pas seuls',
+						'Deux boules de glace plus tard',
+						'L\'hiver arrive, ils auront besoin de leurs bonnets',
+						'Ici pour souffrir',
+						'Sa survie est dans ses mains',
+						'Deux pour le prix d’une',
+						'Le rêve et la réalité font partie de la vie,<br>il faut seulement savoir les distinguer',
+						'J\'ai fait des crêpes avant de mourir',
+						'La contre-attaque saisonnière'
+				),
+				'thriller' => array(
+						'Un jour, quelqu\'un',
+						'Riches de nos misères',
+						'Nous ne sommes pas seuls',
+						'Désolé d\'être parti si tôt',
+						'Deux boules de glace plus tard',
+						'L\'hiver arrive, ils auront besoin de leurs bonnets',
+						'Ici pour souffrir',
+						'Sa survie est dans ses mains',
+						'Ils arrivent trottinant, il leur manque deux pieds',
+						'J\'ai fait des crêpes avant de mourir',
+						'À la recherche de la baguette magique',
+						'La contre-attaque saisonnière',
+						'Tu m\'enlève ça de la bouche'
+				),
+				'western' => array(
+						'Il y a toujours plus fort que nous',
+						'Vous ne le verrez plus jamais de la même façon',
+						'Un étalon flamboyant qui tire plus vite que son ombre'
+				)
+// 				'Des fois tu gagnes, des fois tu apprends',
+// 				'Les anges viennent du ciel, mais moi je t\'ai trouvé sur terre',
+// 				'Dur d\'avancer à deux quand l\'un bloque sur le passé',
+// 				'Seul on va plus vite, à deux on va plus loin ',
+// 				'Un jour, quelqu\'un',
+// 				'Riches de nos misères',
+// 				'Il y a toujours plus fort que nous',
+// 				'Ils n\'en reviendront pas vivants',
+// 				'The Floor is Lava',
+// 				'Nous ne sommes pas seuls',
+// 				'Et si c\'était vous ?',
+// 				'C\'est leur choix de vies',
+// 				'Désolé d\'être parti si tôt',
+// 				'La comédie de l’année',
+// 				'Serré sous la couette',
+// 				'Deux boules de glace plus tard',
+// 				'L\'hiver arrive, ils auront besoin de leurs bonnets',
+// 				'L\'amour avec un grand H',
+// 				'Ici pour souffrir',
+// 				'Sa survie est dans ses mains',
+// 				'Deux pour le prix d’une',
+// 				'Quand les choses vont dans une mauvaise direction,<br>ne les accompagnez pas',
+// 				'Le rêve et la réalité font partie de la vie,<br>il faut seulement savoir les distinguer',
+// 				'Ils arrivent trottinant, il leur manque deux pieds',
+// 				'J\'ai fait des crêpes avant de mourir',
+// 				'Vous ne le verrez plus jamais de la même façon',
+// 				'Le plus gentil des oursons',
+// 				'À la recherche de la baguette magique',
+// 				'La contre-attaque saisonnière',
+// 				'Un étalon flamboyant qui tire plus vite que son ombre',
+// 				'Tu m\'enlève ça de la bouche'
 		);
 		public $character;
 		public $background;
@@ -119,7 +265,7 @@
 			$this->character = in_array($character, $this->characterList) ? $character : $this->characterList[array_rand($this->characterList, 1)];
 			$this->genre = in_array($genre, $this->genreList) ? $genre : $this->genreList[array_rand($this->genreList, 1)];
 			$this->name = $name;
-			$this->description = $this->descriptionList[array_rand($this->descriptionList, 1)];
+			$this->description = $this->descriptionList[$this->genre][array_rand($this->descriptionList[$this->genre], 1)];
 			$this->image = $this->randomImageFromBackground();
 			$this->color = imagecolorallocate($this->image, 255, 255, 255);
 			$this->createImage();

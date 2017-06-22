@@ -85,31 +85,30 @@
 						</p>
 					</div>
 					<div class="center">
-						<img src="assets/img/exclu1.png">
+						<img src="assets/img/exclu4.jpg">
 						<p class="slider-text">
 							<span class="slider-title">
-								Macédoine / Espagne
-							</span>
-							Coupe du monde 2018 -<br>
-							Qualifications. Groupe G
-						</p>
-					</div>
-					<div class="center">
-						<img src="assets/img/exclu2.png">
-						<p class="slider-text">
-							<span class="slider-title">
-								Twin peaks : The Return
+								Homeland
 							</span>
 							Série suspens
 						</p>
 					</div>
 					<div class="center">
-						<img src="assets/img/exclu3.png">
+						<img src="assets/img/exclu5.jpg">
 						<p class="slider-text">
 							<span class="slider-title">
-								Vice Versa
+								Le Meraviglia : géant des mers
 							</span>
-							Film animation
+							Doc. sciences et techniques
+						</p>
+					</div>
+					<div class="center">
+						<img src="assets/img/exclu6.jpg">
+						<p class="slider-text">
+							<span class="slider-title">
+								Insaisissables 2
+							</span>
+							Film suspens
 						</p>
 					</div>
 				</div>
