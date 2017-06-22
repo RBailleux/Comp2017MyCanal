@@ -787,4 +787,15 @@ ul.social-network li {
 	#customPoster .full-row{
 		display:block;
 	}
+	#customPoster .custom-left{
+		padding-top:0!important;
+	    min-height: 650px;
+	}
+	#customPoster .custom-right {
+	    min-height: 400px;
+	}
+	#generator .left-indent {
+	    padding-left: 0px;
+	}
+	
 }

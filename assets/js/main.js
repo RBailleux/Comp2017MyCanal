@@ -53,6 +53,9 @@ jQuery(document).ready(function(){
 	
 	//GAME
 	var topHeight = jQuery('#customPoster h1').outerHeight()+'px';
+	if(jQuery(window).width() <= 768){
+		topHeight = 50;
+	}
 	jQuery('#customPoster .custom-right .examples-main.images').each(function(){
 		jQuery(this).css('top', topHeight);
 	});
@@ -70,7 +73,18 @@ jQuery(document).ready(function(){
 });
 
 $(document).ready(function () {
-	jQuery('#functionalities').css('max-height',jQuery('.video-background').outerHeight()-1+'px');
+	if(jQuery(window).width() > 768){
+		jQuery('#functionalities').css('max-height',jQuery('.video-background').outerHeight()-1+'px')
+	}
+	else{
+		var videoHeight = jQuery(".video-background").outerHeight();
+		var videoTitleHeight = jQuery("#functionalities h1").outerHeight();
+		var videoButtonHeight = jQuery("#functionalities .funct-button").outerHeight();
+		
+		var maxHeight = videoHeight + videoTitleHeight + videoButtonHeight + 30;
+		
+		jQuery('#functionalities').css('max-height', maxHeight+'px')
+	}
     // Handler for .ready() called.
     $('html, body').animate(
 		{
@@ -87,7 +101,18 @@ $(document).ready(function () {
 	if(windowPosition >= (videoPosition - (videoHeight/2))){
 		var cvideo = document.getElementById("cvideo"); 
 		cvideo.play();
-		jQuery('#functionalities').css('max-height',jQuery('.video-background').outerHeight()+'px')
+		if(jQuery(window).width() > 768){
+			jQuery('#functionalities').css('max-height',jQuery('.video-background').outerHeight()-1+'px')
+		}
+		else{
+			var videoHeight = jQuery(".video-background").outerHeight();
+			var videoTitleHeight = jQuery("#functionalities h1").outerHeight();
+			var videoButtonHeight = jQuery("#functionalities .funct-button").outerHeight();
+			
+			var maxHeight = videoHeight + videoTitleHeight + videoButtonHeight + 30;
+			
+			jQuery('#functionalities').css('max-height', maxHeight+'px')
+		}
 	}
 });
 function delay(){
