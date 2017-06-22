@@ -43,6 +43,9 @@ a:hover{
 /**********/
 /** MAIN **/
 /**********/
+.displayOnResp{
+	display:none;
+}
 .container-fill{
 	position:relative;
 	min-height: 100%;
@@ -297,20 +300,23 @@ a:hover{
 #customPoster .centerOnTop{
 	top:0;
 }
-#customPoster h1{
-	background: rgba(255,255,255,1);
-	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(50%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
-	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
-	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
-	background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
-	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=1 );
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	position:relative;
-	z-index:2;
+#customPoster .customRow{
+	max-width:100%;
 }
+/* #customPoster h1){ */
+/* 	background: rgba(255,255,255,1); */
+/* 	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%); */
+/* 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(50%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1))); */
+/* 	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%); */
+/* 	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%); */
+/* 	background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%); */
+/* 	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%); */
+/* 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=1 ); */
+/* 	-webkit-background-clip: text; */
+/* 	-webkit-text-fill-color: transparent; */
+/* 	position:relative; */
+/* 	z-index:2; */
+/* } */
 #customPoster .examples-main{
 	position:relative;
 }
@@ -712,6 +718,12 @@ ul.social-network li {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+	.rmOnResp{
+		display:none;
+	}
+	.displayOnResp{
+		display:block;
+	}
 	.btn{
 		white-space: normal;
 	}
@@ -726,6 +738,9 @@ ul.social-network li {
 	}
 	h1{
 		font-size:2em;
+	}
+	h1.smaller{
+		font-size:1.7em;
 	}
 	.signin-container{
 		display:none;
@@ -749,7 +764,7 @@ ul.social-network li {
 	#customPoster{
 		background:none;
 	}
-	#customPoster h1{
+	#customPoster h1:not(.white){
 		color:black
 	}
 	#customPoster .background-overlay{
@@ -758,11 +773,18 @@ ul.social-network li {
 	#functionalities{
 	position:relative;
 	}
-	#functionalities h1{
+	#functionalities h1:not(.white){
 		color: black;
 	}
 	#functionalities .funct-title, #functionalities .funct-button{
 		position:relative;
 		z-index:2;
+	}
+	#customPoster .customRow{
+		max-width:auto;
+		margin:0;
+	}
+	#customPoster .full-row{
+		display:block;
 	}
 }

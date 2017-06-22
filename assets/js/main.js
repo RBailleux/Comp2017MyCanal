@@ -96,7 +96,18 @@ function delay(){
 	}, 3000);
 }
 jQuery(window).scroll(function(){
-	jQuery('#functionalities').css('max-height',jQuery('.video-background').outerHeight()-1+'px')
+	if(jQuery(window).width() > 768){
+		jQuery('#functionalities').css('max-height',jQuery('.video-background').outerHeight()-1+'px')
+	}
+	else{
+		var videoHeight = jQuery(".video-background").outerHeight();
+		var videoTitleHeight = jQuery("#functionalities h1").outerHeight();
+		var videoButtonHeight = jQuery("#functionalities .funct-button").outerHeight();
+		
+		var maxHeight = videoHeight + videoTitleHeight + videoButtonHeight + 30;
+		
+		jQuery('#functionalities').css('max-height', maxHeight+'px')
+	}
 	var windowPosition = jQuery(window).scrollTop();
 	//START VIDEO
 	var videoPosition = jQuery(".video-background").offset().top;

@@ -144,13 +144,18 @@
 			</div>
 		</div>
 		<div id="customPoster">
-			<div class="row" style="max-width:100%">
-				<div class="col-xs-6 bgBlack no-padding-right padding-top padding-bottom">
+			<div class="row customRow">
+				<div class="col-xs-12 bgBlack no-padding displayOnResp">
+					<h1 class="uppercase center white space-top smaller">
+						Générateur original de contenus originaux
+					</h1>
+				</div>
+				<div class="col-xs-12 col-md-6 bgBlack no-padding-right padding-top padding-bottom rmOnResp">
 					<p class="text-right uppercase white big-text space-top">
 						Générateur original&nbsp;
 					</p>
 				</div>
-				<div class="col-xs-6 no-padding-left padding-top padding-bottom">
+				<div class="col-xs-12 col-md-6 no-padding-left padding-top padding-bottom rmOnResp">
 					<p class="uppercase black big-text space-top">
 						de contenus originaux
 					</p>
