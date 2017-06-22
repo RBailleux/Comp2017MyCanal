@@ -398,6 +398,7 @@ a:hover{
 	left:0;
 	line-height:2.5em;
 	z-index:1;
+	max-width: 100%;
 }
 #customPoster .generator-input .copyfrominput{
 	text-transform:none;
