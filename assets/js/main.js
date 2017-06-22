@@ -1,4 +1,5 @@
 jQuery(document).ready(function(){
+	
 	//Slider
 	$('#exclu-slider').slick({
 	  dots: false,
@@ -24,6 +25,8 @@ jQuery(document).ready(function(){
 	    }
 	  ]
 	});
+	
+	
 	//PRICING
 	jQuery('.pricing-container').click(function(){
 		pricingShadow(this);
@@ -34,16 +37,10 @@ jQuery(document).ready(function(){
 	jQuery('.pricing-container').focus(function(){
 		pricingShadow(this);
 	});
-
+	
+	
 	var windowPosition = jQuery(window).scrollTop();
-	//START VIDEO
-	var videoPosition = jQuery(".video-background").offset().top;
-	var videoHeight = jQuery(".video-background").outerHeight();
-	if(windowPosition >= (videoPosition - (videoHeight/2))){
-		var cvideo = document.getElementById("cvideo"); 
-		cvideo.play();
-		jQuery('#functionalities').css('max-height',jQuery('.video-background').outerHeight()+'px')
-	}
+	
 	//START EXAMPLES
 	var customPosterPosition = jQuery("#customPoster").offset().top;
 	var customPosterHeight = jQuery("#customPoster").outerHeight();
@@ -69,7 +66,35 @@ jQuery(document).ready(function(){
 		jQuery('.examples-container').removeClass('examples-started');
 		jQuery('#customPoster #generator').load('./game/userPoster.php');
 	});
+	
 });
+
+$(document).ready(function () {
+	jQuery('#functionalities').css('max-height',jQuery('.video-background').outerHeight()-1+'px');
+    // Handler for .ready() called.
+    $('html, body').animate(
+		{
+			scrollTop: $('#customPoster').offset().top
+		}, 
+		'fast', 
+		delay()
+	);
+    
+    var windowPosition = jQuery(window).scrollTop();
+	//START VIDEO
+	var videoPosition = jQuery(".video-background").offset().top;
+	var videoHeight = jQuery(".video-background").outerHeight();
+	if(windowPosition >= (videoPosition - (videoHeight/2))){
+		var cvideo = document.getElementById("cvideo"); 
+		cvideo.play();
+		jQuery('#functionalities').css('max-height',jQuery('.video-background').outerHeight()+'px')
+	}
+});
+function delay(){
+	setTimeout(function(){ 
+		$('html, body').animate({scrollTop: 0}, 'slow')
+	}, 3000);
+}
 jQuery(window).scroll(function(){
 	jQuery('#functionalities').css('max-height',jQuery('.video-background').outerHeight()-1+'px')
 	var windowPosition = jQuery(window).scrollTop();

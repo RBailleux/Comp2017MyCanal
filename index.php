@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="assets/css/slick.css" />
 		<link rel="stylesheet" href="assets/css/slick-theme.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- FAVICON -->
+		<link rel="icon" href="assets/img/favicon.ico"/>
 		<!-- FONTS -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
@@ -392,6 +394,7 @@
 		<!-- /COPYRIGHT -->
 		<!-- SCRIPTS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="assets/js/jquery-ui.min.js"></script>
     	<script src="assets/js/bootstrap.min.js"></script>
     	<script src="assets/js/slick.min.js"></script>
     	<script src="assets/js/main.js"></script>
