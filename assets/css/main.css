@@ -243,6 +243,7 @@ a:hover{
 	position:relative;
 }
 #functionalities .video-background{
+	background-color:black;
 	position:relative;
 	width:100%;
 	height:auto;
@@ -833,5 +834,10 @@ ul.social-network li {
 	#customPoster #img-container.shareIt:hover .shareItBlock p{
 		padding-top:0!important;
 		font-size: 1.2em;
+	}
+	#functionalities .video-overlay:not(.playing){
+		background-image:url(../img/play.png);
+		background-position:center center;
+		background-repeat:no-repeat;
 	}
 }

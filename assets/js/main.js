@@ -96,6 +96,20 @@ $(document).ready(function () {
     
     var windowPosition = jQuery(window).scrollTop();
 	//START VIDEO
+    
+    if(jQuery(window).width() <= 768){
+		jQuery('.video-overlay').click(function(){
+			jQuery(this).toggleClass('playing');
+			var cvideo = document.getElementById("cvideo"); 
+			if(jQuery(this).hasClass('playing')){
+				cvideo.play();
+			}
+			else{
+				cvideo.pause();
+			}
+		})
+	}
+    
 	var videoPosition = jQuery(".video-background").offset().top;
 	var videoHeight = jQuery(".video-background").outerHeight();
 	if(windowPosition >= (videoPosition - (videoHeight/2))){
