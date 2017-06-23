@@ -38,7 +38,7 @@ function step0(){
 						<div class="col-xs-12">
 							<p class="generator-desc">Devenez créateur de contenu original</p>
 						</div>
-						<div class="col-xs-12 words-container examples-container" style="height:420px" data-doexamples="1">
+						<div class="col-xs-12 words-container examples-container generator-container" data-doexamples="1">
 							<div class="generator-main symbols">
 								<p>+</p>
 								<p>+</p>
@@ -129,11 +129,11 @@ function step0(){
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-12 row no-padding-right">
-							<div class="generator-step generator-submit center col-xs-10">
+						<div class="col-xs-12 row no-padding-right paddingRightOnResp">
+							<div class="generator-step generator-submit center col-xs-8">
 								<button class="btn btn-primary btn-big">Générer</button>
 							</div>
-							<div class="generator-step generator-random center col-xs-2 no-padding-right">
+							<div class="generator-step generator-random center col-xs-4 no-padding-right paddingRightOnResp">
 								<button class="btn btn-primary btn-big"><span class="glyphicon glyphicon-random" aria-hidden="true"></span></button>
 							</div>
 						</div>

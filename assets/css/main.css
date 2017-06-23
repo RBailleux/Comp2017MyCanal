@@ -498,6 +498,9 @@ a:hover{
     position: absolute;
     right: 10px;
 }
+#customPoster .generator-container{
+	height:420px;
+}
 .shareItBlock{
 	display:none;
 }
@@ -719,6 +722,9 @@ ul.social-network li {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+	.paddingRightOnResp{
+		padding-right:15px;
+	}
 	.rmOnResp{
 		display:none;
 	}
@@ -785,12 +791,15 @@ ul.social-network li {
 		max-width:auto;
 		margin:0;
 	}
+	#customPoster .word {
+	    padding-top: 0.8em;
+	}
 	#customPoster .full-row{
 		display:block;
 	}
 	#customPoster .custom-left{
 		padding-top:0!important;
-	    min-height: 650px;
+	    min-height: 350px;
 	}
 	#customPoster .custom-right {
 	    min-height: 400px;
@@ -798,5 +807,31 @@ ul.social-network li {
 	#generator .left-indent {
 	    padding-left: 0px;
 	}
-	
+	#customPoster .words, #customPoster .symbols {
+	    font-size: 1.2em;
+	}
+	#generator .generator-main.symbols p:nth-child(2) {
+	    padding-top: 1.2em;
+	}
+	#customPoster .generator-main.symbols p:nth-child(3) {
+	    padding-top: 1em;
+	}
+	#customPoster .myGeneratedPoster {
+	    min-height: inherit;
+	}	
+	#customPoster .generator-container{
+		height:260px;
+	}
+	#customPoster .generator-backgrounds-list, 
+	#customPoster .generator-genres-list, 
+	#customPoster .generator-characters-list{
+		max-height:200px;
+	}
+	#customPoster #img-container.shareIt:hover .shareItBlock{
+		height:200px;
+	}
+	#customPoster #img-container.shareIt:hover .shareItBlock p{
+		padding-top:0!important;
+		font-size: 1.2em;
+	}
 }
