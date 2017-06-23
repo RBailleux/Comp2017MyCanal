@@ -132,8 +132,8 @@
 				</div>
 			</div>
 			<div class="video-overlay"></div>
-			<video id="cvideo" class="video-background" loop>
-				<source src="assets/img/Boucle-test_1.mp4" type="video/mp4" />
+			<video id="cvideo" class="video-background" onclick="togglePause()" loop>
+				<source src="assets/img/boucle.mp4" type="video/mp4" />
 			</video>
 			<div class="container funct-button">
 				<div class="row">
