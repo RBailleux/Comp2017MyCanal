@@ -210,7 +210,7 @@
 						<img src="assets/img/revenants/2.jpg" class="examples-step" data-step="2">
 						<img src="assets/img/revenants/3.jpg" class="examples-step" data-step="3">
 					</div>
-					<div class="start-generator-container centerOnBottom center">
+					<div class="start-generator-container center">
 						<button class="btn btn-primary btn-big start-generator">Je créé mon contenu original</button>
 					</div>
 				</div>

@@ -320,11 +320,19 @@ a:hover{
 /* } */
 #customPoster .examples-main{
 	position:relative;
+	width:100%;
 }
 #customPoster .examples-main.images .examples-step{
 	position:absolute;
-	max-width:80%;
+	max-width:70%;
 	height:auto;
+	left:0;
+	right:0;
+	margin:0 auto;
+}
+#customPoster .start-generator-container{
+	position:absolute;
+	bottom:0;
 	left:0;
 	right:0;
 	margin:0 auto;
@@ -512,6 +520,9 @@ a:hover{
     width: calc(100% - 30px);
     height: 413px;
     background-color:rgba(0,0,0,0.9);
+}
+#customPoster .start-generator-container{
+/* 	padding-top:30px; */
 }
 body.isScrollingUp #customPoster .examples-main.words[data-serie="borgia"],
 body.isScrollingUp #customPoster .examples-main.words[data-serie="revenants"]{
