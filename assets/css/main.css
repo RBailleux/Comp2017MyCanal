@@ -513,7 +513,8 @@ a:hover{
 .shareItBlock{
 	display:none;
 }
-#customPoster #img-container.shareIt:hover .shareItBlock{
+#customPoster #img-container.shareIt:hover .shareItBlock,
+#customPoster #img-container.shareIt:focus .shareItBlock{
 	display: block;
     position: absolute;
     top: 25px;
