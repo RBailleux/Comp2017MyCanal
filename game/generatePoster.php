@@ -357,10 +357,10 @@
 		
 		public function addName()
 		{
-			$font = $this->randomFontFromGenre();
+			$randomFontFromGenre= $this->randomFontFromGenre();
+			$font = file_get_contents('imageBase/fonts/'.$this->genre.'/'.$randomFontFromGenre);
 			
-			$now = DateTime::createFromFormat('U.u', microtime(true));
-			$fontName = $now->format("YmdHisu").'.ttf';
+			$fontName = $this->genre.$randomFontFromGenre;
 			
 			file_put_contents($fontName, $font);
 			
@@ -374,7 +374,7 @@
 		
 		protected function randomFontFromGenre(){
 			$randomFont = rand(1,$this->countFileInFolder('imageBase/fonts/'.$this->genre)).'.ttf';
-			return file_get_contents('imageBase/fonts/'.$this->genre.'/'.$randomFont);
+			return $randomFont;
 		}
 		
 		
