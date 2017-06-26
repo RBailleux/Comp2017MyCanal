@@ -513,6 +513,13 @@ a:hover{
     height: 413px;
     background-color:rgba(0,0,0,0.9);
 }
+body.isScrollingUp #customPoster .examples-main.words[data-serie="borgia"],
+body.isScrollingUp #customPoster .examples-main.words[data-serie="revenants"]{
+	display:none;
+}
+body.isScrollingUp #customPoster .examples-main.images[data-serie="guyane"] .examples-step[data-step="3"]{
+	display:block!important;
+}
 
 /*PRICING*/
 .pricing-section{
