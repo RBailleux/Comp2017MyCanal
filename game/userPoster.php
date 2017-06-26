@@ -330,6 +330,7 @@ jQuery(document).ready(function(){
 		affiche.onload = function () {
 			jQuery('#img-container').addClass('shareIt');  
 			jQuery('#finalUserShare').css('display','block');
+			jQuery('.shareItBlock').css('height', jQuery('.myGeneratedPoster').height()+'px');
 	    };
 		
 	});
@@ -360,6 +361,7 @@ jQuery(document).ready(function(){
 		affiche.onload = function () {
 			jQuery('#img-container').addClass('shareIt');  
 			jQuery('#finalUserShare').css('display','block');
+			jQuery('.shareItBlock').css('height', jQuery('.myGeneratedPoster').height()+'px');
 	    };
 	}
 	
