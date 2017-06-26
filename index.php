@@ -15,7 +15,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
 	</head>
-	<body>
+	<body class="isScrollingUp">
 		<div id="programs">
 			<span class="background-overlay"></span>
 			<div class="container container-fill">
