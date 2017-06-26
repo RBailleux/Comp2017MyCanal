@@ -134,9 +134,10 @@ $(document).ready(function () {
 });
 function delay(){
 	setTimeout(function(){ 
-		$('html, body').animate({scrollTop: 0}, 'slow')
+		$('html, body').animate({scrollTop: 0}, 'slow', function(){
+			jQuery('body').removeClass('isScrollingUp')
+		})
 	}, 3000);
-	jQuery('body').removeClass('isScrollingUp')
 }
 jQuery(window).scroll(function(){
 	if(jQuery(window).width() > 768){
