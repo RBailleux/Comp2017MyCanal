@@ -7,6 +7,8 @@ jQuery(document).ready(function(){
 	  slidesToShow: 3,
 	  slidesToScroll: 3,
 	  centerMode: true,
+	  autoplay: true,
+	  autoplaySpeed: 3000,
 	  responsive: [
 	    {
 	      breakpoint: 1024,
@@ -45,7 +47,7 @@ jQuery(document).ready(function(){
 	var customPosterPosition = jQuery("#customPoster").offset().top;
 	var customPosterHeight = jQuery("#customPoster").outerHeight();
 	if(windowPosition >= (customPosterPosition - (customPosterHeight/2))){
-		if(!jQuery('.examples-container').hasClass('examples-started')){
+		if(!jQuery('.examples-container').hasClass('examples-started') && !jQuery('body').hasClass('isScrollingUp')){
 			jQuery('.examples-container').addClass('examples-started');
 			fadeInExamples();
 		}
@@ -112,8 +114,9 @@ $(document).ready(function () {
     
 	var videoPosition = jQuery(".video-background").offset().top;
 	var videoHeight = jQuery(".video-background").outerHeight();
-	if(windowPosition >= (videoPosition - (videoHeight/2))){
+	if(windowPosition >= (videoPosition - (videoHeight/2)) && !jQuery('body').hasClass('isScrollingUp')){
 		var cvideo = document.getElementById("cvideo"); 
+		jQuery('.video-orverlay').removeClass('playing');
 		cvideo.play();
 		if(jQuery(window).width() > 768){
 			jQuery('#functionalities').css('max-height',jQuery('.video-background').outerHeight()-1+'px')
@@ -133,6 +136,7 @@ function delay(){
 	setTimeout(function(){ 
 		$('html, body').animate({scrollTop: 0}, 'slow')
 	}, 3000);
+	jQuery('body').removeClass('isScrollingUp')
 }
 jQuery(window).scroll(function(){
 	if(jQuery(window).width() > 768){
@@ -152,14 +156,17 @@ jQuery(window).scroll(function(){
 	var videoPosition = jQuery(".video-background").offset().top;
 	var videoHeight = jQuery(".video-background").outerHeight();
 	if(windowPosition >= (videoPosition - (videoHeight/2))){
-		var cvideo = document.getElementById("cvideo"); 
-		cvideo.play();
+		if(!jQuery('body').hasClass('isScrollingUp')){
+			var cvideo = document.getElementById("cvideo"); 
+			jQuery('.video-overlay').removeClass('playing');
+			cvideo.play();
+		}
 	}
 	//START EXAMPLES
 	var customPosterPosition = jQuery("#customPoster").offset().top;
 	var customPosterHeight = jQuery("#customPoster").outerHeight();
 	if(windowPosition >= (customPosterPosition - (customPosterHeight/2))){
-		if(!jQuery('.examples-container').hasClass('examples-started')){
+		if(!jQuery('.examples-container').hasClass('examples-started') && !jQuery('body').hasClass('isScrollingUp')){
 			jQuery('.examples-container').addClass('examples-started');
 			fadeInExamples();
 		}
