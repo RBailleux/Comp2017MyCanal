@@ -70,6 +70,12 @@ jQuery(document).ready(function(){
 		jQuery('.examples-container').data('doexamples', '0');
 		jQuery('.examples-container').removeClass('examples-started');
 		jQuery('#customPoster #generator').load('./game/userPoster.php');
+		$('html, body').animate(
+			{
+				scrollTop: $('#customPoster').offset().top
+			}, 
+			'fast'
+		);
 	});
 	
 });
